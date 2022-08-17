@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sell.css">
+    <script
+       src="https://kit.fontawesome.com/24c494a6b6.js"
+       crossorigin="anonymous"
+     ></script>
+    <script src="sell.js"></script>
+    <title>Best-Selling Skin,Hair& Beauty Products</title>
+    <style>
+        /* #container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows:auto;
+
+        } */
+
+        #top_div{
+            width: 100%;
+            height: 230px;
+            background-color: #f2f2f2;
+            border: 1px solid #f2f2f2;
+            cursor: pointer;
+        }
+
+        .white{
+            width: 100%;
+            height: 62%;
+            /* border: 1px solid black; */
+            background-color: #ffffff;
+            border: 1px solid #ffffff;
+            margin-top: 25px;
+            
+        }
+
+        .white_top{
+            display: flex;
+            justify-content: space-between;
+            width: 88%;
+            /* border: 1px solid blue; */
+            margin: auto;
+            margin-top: 22px;
+        }
+
+        .white_top>div>a>img{
+            height: 60px;
+        }
+
+        .search>input{
+            height: 38px;
+            width: 400px;
+            /* border: 1px solid gray;  */
+            border: none;
+            font-size: 15px;
+            margin-left: 5px;
+        }
+
+        .search{
+            height: 40px;
+            width: 450px;
+            border: 1px solid #a6a6a6;
+            margin-top: 10px;
+            display: flex;
+        }
+
+        .search>div>svg{
+            width: 22px;
+            margin-top: 9px;
+            margin-left: 5px;
+        } 
+
+        .account{
+            display: flex;
+            width: 80px;
+        }
+
+        .account:hover{
+            background-color:#e2e2e2;
+            height: 50px;
+            width: 100px;
+        }
+
+        .account>div>i{
+            font-size: 20px;
+            margin-top: 14px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .account_and_cart{
+            display: flex;
+            width: 18%;
+            justify-content: space-between;
+            margin-top: 8px;
+        }
+
+        .cart{
+            display: flex;
+            font-size: 18px;
+            width: 80px;
+            /* border: 1px solid red; */
+        }
+
+        .cart:hover{
+            background-color:#e2e2e2;
+            height: 50px;
+            width: 80px;
+        }
+
+        .cart>div>svg{
+            font-size: 20px;
+            margin-top: 14px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        div>.p{
+            font-family: 'Lato', sans-serif;
+            font-size: 14.5px;
+            /* position: absolute; */
+        }
+        
+        .top_last{
+            display: flex;
+            width: 78.5%;
+            margin: auto;
+            margin-left: 90px;
+            justify-content: space-between;
+            font-family: 'Poly', serif;
+            font-size: 15px;
+            color: #3f3f3f;
+            margin-top: 2px;
+            /* position: relative; */
+        }
+
+        .top_last>div{
+            width: 50%;
+            text-align: center;
+            height: 40px;
+            /* border: 1px solid red; */
+            margin: auto;
+            white-space: nowrap;
+            margin-right: 5px;
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+
+        .top_last>div:hover{
+            background-color:#e2e2e2;
+        }
+
+        .top_last>div>p{
+            margin-top: 10px;
+        }
+
+        #gray{
+            display: flex;
+            width: 67%;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        .gray_matter{
+            display: flex;
+        }
+
+        .icon{
+            margin-top: 12px;
+        }
+       
+        .gray_matter>div>p{
+            padding-left: 8px;
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+        }
+
+        #second_section{
+            width: 100%;
+            background-color: #cccccc;
+            text-align: center;
+            height: 50px;
+            font-family: 'Lato', sans-serif;
+            font-weight: bolder;
+            padding-top: 1px;
+            font-size: 14px;
+            color: #3a3c47;
+        }
+
+        #container{
+            display: flex;
+            flex-wrap: wrap;
+            width: 95%;
+            gap: 40px;
+            margin-left: 5%;
+            margin-right: 1%;
+            justify-content: center;
+
+        }
+
+        #container > div{
+            height: auto;
+            width: 250px;
+        }
+
+        .image{
+            height: 50%;
+            width: 100%;
+        }
+
+        .about{
+            width: 70%;
+            margin-left: 30%;
+            margin-right: 5%;
+        }
+
+        #price{
+            margin-left: 1%;
+            padding: 8px 100px 8px 10px;
+            font-size: 15px;
+        }
+        a{
+            text-decoration: none;
+            color: #262626;
+        }
+        span{
+            margin-left: 30%;
+        }
+        .btn1{
+            padding: 5px 50px 5px 50px;
+            font-size: 20px;
+            background-color: #222222;
+            color: wheat;
+        }
+
+        /* end */
+
+        #footer{
+            width: 100%;;
+            border-top: 1px solid gray;
+            margin-top: 100px;
+        }
+
+        #footer>.first{
+            width: 85%;
+            margin: auto;
+            height: 150px;
+            /* border-top: 1px solid gray; */
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        #footer>.first>.footer_left{
+            width: 48%;
+            /* border: 1px solid black; */
+            box-sizing: border-box;
+        }
+        
+        #footer>.first>.footer_right{
+            width: 48%;
+            /* border: 1px solid black; */
+        }
+
+        #footer>.first>.footer_left>p{
+            font-family: 'Poly', serif;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        #footer>.first>.footer_left>button{
+            background-color: #222222;
+            color: white;
+            padding: 10px 32px 10px 32px;
+        }
+
+        .footer_right>div>img{
+            margin-right: 10px;
+        }
+
+        #footer>.second{
+            width: 85%;
+            margin: auto;
+            height: 150px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        #footer>.second>.second_left{
+            width: 48%;
+            border-top: 1px solid gray;
+            box-sizing: border-box;
+        }
+        
+        #footer>.second>.second_right{
+            width: 48%;
+            /* border: 1px solid black; */
+        }
+
+        .second_right{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .second_right>div{
+            width: 30%;
+            border-top: 1px solid gray;
+        }
+
+        #last_footer{
+            width: 100%;
+            border-top: 1px solid gray;
+            margin-top: 80px;
+        }
+
+        #last_footer>div{
+            width: 85%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .last_footer_left{
+            width: 48%;
+        }
+
+        .last_footer_right{
+            width: 48%;
+        }
+
+        .last_footer_right>div{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .last_footer_right>div>img{
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+  <!-- header start -->
+  
+  <div id="top_div">
+    <div class="white">
+        <!-- First part -->
+        <div class="white_top">
+            <!-- Dermstore logo and name -->
+            <div>
+               <a href="home.html"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREOArrqc7sf8CcH6397fZikjFfRELlBl4Iwc_F3LsQXdiU5tvc8EYd3RXyDTTmrIhEhg&usqp=CAU" alt=""> </a>
+            </div>
+
+            <!-- Search bar -->
+            <div class="search">
+                <input type="text" placeholder="Search for a product or brand...">
+                <div><svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg></div>
+            </div>
+
+            <!-- Account and Cart -->
+            <div class="account_and_cart">
+                <div class="account">
+                    <div><i class="fa-regular fa-user"></i></div>
+                    <div><p class="p">Account</p></div>
+                </div>
+                <div class="cart">
+                    <div><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                    </svg></div>
+                    <div><p class="p">Cart</p></div>
+                </div>
+            </div>
+          </div>
+
+          <!-- Nav Bar -->
+        <div class="top_last">
+                <div><a>Brands</a></div>
+                <div><a>Browse By</a></div>
+                <div><a href="bestseller.html">Bestsellers</a></div>
+                <div><a>Skin Care</a></div>
+                <div><a>Make up</a></div>
+                <div><a>Hair Care</a></div>
+                <div><a>Bath & Body</a></div>
+                <div><a>Men</a></div>
+                <div><a>Tools & Devices</a></div>
+                <div><a>Gifts & Sets</a></div>
+                <div><a href="beautifix.html">BeautyFIX</a></div>
+                <div><a href="shop.html">Sale</a></div>
+                <div><a>New</a></div>
+                <div><a>Skin 101</a></div>
+        </div>
+    </div>
+    <!-- white end -->
+
+    <!-- gray_part_start -->
+   <div id="gray">
+       <div class="gray_matter">
+           <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+            <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+          </svg></div>
+           <div><p>FREE US Shipping over $50</p></div>
+       </div>
+
+       <div class="gray_matter">
+        <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+          </svg></div>
+        <div><p>New customers save 15% with code WELCOME15</p></div>
+    </div>
+
+    <div class="gray_matter">
+        <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+          </svg></div>
+        <div><p>Redeem Dermstore Rewards</p></div>
+    </div>
+
+    <div class="gray_matter">
+        <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+          </svg></div>
+        <div><p>Pay in 4 with Klarna</p></div>
+    </div>
+   </div>
+</div>
+
+
+<!-- Header last part start -->
+<div id="second_section">
+    <p>Receive a 14-piece Gift (Worth $157) when you spend $175+! See cart for details. SHOP NOW</p>
+</div>
+    <div class="about">
+        <h1>Dermstore Bestsellers</h1>
+        <p>The beauty, skin & hair products you're unapologetically obsessed with. And we understand. From skin care as an expression of self-care, to hair care revolve self-confidence around, shop our tried and 
+            tested products that are loved by thousands delivered straight to your door.</p>
+    </div>
+    <span>Sort by</span>
+    <select onclick="sortbyprice()" id="price">
+        <option value="select">Defualt</option>
+        <option value="HTL">Price:high to low</option>
+        <option value="LTH">Price:low to high</option>
+        <option value="AtoZ">A to Z</option>
+        <option value="ZtoA">Z to A</option>
+    </select>
+    <div class="container">
+        <div class="sidenav">
+            <div>
+              <button class="dropdown-btn">Refine 
+                <!-- <i class="fa fa-caret-down"></i> -->
+                <hr>
+              </button>
+            </div>
+             <button class="dropdown-btn">Brand
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+
+                <input type="checkbox" id="vehicle1">
+                <label for="vehicle1">100% Pure</label><br>
+
+                <input type="checkbox" id="vehicle1">
+                <label for="vehicle1">Allies of Skin</label><br>
+
+                <input type="checkbox" id="vehicle1">
+                <label for="vehicle1">Alterna</label><br>
+
+                <input type="checkbox" id="vehicle1">
+                <label for="vehicle1">Avene</label><br>
+
+            </div> 
+            
+            <button class="dropdown-btn">Skincare Product Type 
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Moistuizers</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Serums</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Cleansers</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Eye Care</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Exfoliators & Scrubs</label><br>
+          
+            </div> 
+            <button class="dropdown-btn">Skin Type
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">All</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Comnination</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Dehydrated</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Dry</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Mature</label><br>
+
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Normal</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Oily</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Sensitive</label><br>
+            </div> 
+            <button class="dropdown-btn">Skincare Concern
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Acne</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Fine Lines & Wrinkles</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Dehydration</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Pigmention</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Blemishes</label><br>
+            </div> 
+            <button class="dropdown-btn">Skincare Concern
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">HaircareCategory
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">Hair Type
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">Hair Care Benefit
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">Makeup Category
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">Makeup Product
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">Eyes Products
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">Lips Products
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div>  
+            <button class="dropdown-btn">Bath & Body Category
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">Bodycare Concern
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">Key Ingredients
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">Preferences
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">Gender
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+            <button class="dropdown-btn">Average Reviews
+              <i class="fa fa-caret-down"></i>
+              <hr>
+            </button>
+            <div class="dropdown-container" id="navbar">
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">AGENT NATEUR(1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Apa Beauty (2)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">Aquis (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+              <input type="checkbox" id="vehicle1">
+              <label for="vehicle1">BABOR (1)</label><br>
+            </div> 
+          </div>
+        <div id ="container"></div>
+    </div>
+    
+
+
+    <!-- end -->
+
+    <div id="footer">
+        <div class="first">
+            <div class="footer_left">
+                <p>Sign up to our newsletters and receive the latest exclusive discounts and deals</p>
+                <button>SIGN ME UP</button>
+            </div>
+
+            <div class="footer_right">
+                <p>Connect with us</p>
+                <div style="display: flex;">
+                    <img src="https://www.kindpng.com/picc/m/20-209935_facebook-icon-clipart-social-media-icons-grey-facebook.png" alt="" style="width: 40px; height:40px">
+                    <img src="https://www.pngitem.com/pimgs/m/204-2040928_logo-twitter-circle-grey-current-twitter-logo-png.png" alt="" style="width: 40px; height:40px">
+                    <img src="https://thumbs.dreamstime.com/b/basic-rgb-146064713.jpg" alt="" style="width: 40px; height:40px">
+                    <img src="https://www.vhv.rs/dpng/d/256-2566317_youtube-icon-gray-youtube-silver-logo-png-transparent.png" alt="" style="width: 50px; height:40px">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-r3g3vnJYLEPKawE5hzH8X8G8O-8QBep0lptcs-SR-srpWtCb9Wu3lgwlm4IxxBV3auI&usqp=CAU" alt="" style="width: 40px; height:40px">
+                </div>
+            </div>
+        </div>
+
+        <div class="second">
+            <div class="second_left">
+                <p style="font-family: 'Poly', serif; font-size: 14px;">Customer Service</p>
+                <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Help Center / FAQs</p>
+                <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Returns</p>
+                <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Shipping Information</p>
+                <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Order Status</p>
+            </div>
+            <div class="second_right">
+                <div class="second_right_one">
+                    <p style="font-family: 'Poly', serif; font-size: 14px;">My Account</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Manage My Subscriptions</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">My Rewards</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">My Favorites</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Referrals</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Order History</p>
+                </div>
+
+                <div class="second_right_second">
+                    <p style="font-family: 'Poly', serif; font-size: 14px;">Company</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">About Us</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Press</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">What is Klarna?</p>
+                </div>
+
+                <div class="second_right_third">
+                    <p style="font-family: 'Poly', serif; font-size: 14px;">Legal</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Privacy Policy</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Terms & Conditions</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Modern Slavery Statement</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Product Recall</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Accessibility</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="last_footer">
+        <div>
+            <div class="last_footer_left">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWstdVMg1QG6hIQhkk-ypLnk0UrwVLQy1VCuKkJ6XdRiuEWmqen36iz4g3CVyCNWnvO5w&usqp=CAU" alt="" style="width: 20%;">
+                <p style="margin-top: -2%;">2022 © The Hut.com Ltd.</p>
+            </div>
+            <div class="last_footer_right">
+                <p>Pay securely with</p>
+                <div>
+                    <img src="https://cdn.trend.az/2008/06/10/Logo_VISA_180507.jpg" alt="" style="width: 9%;">
+                    <img src="https://cdn.trend.az/2008/06/10/Logo_VISA_180507.jpg" alt="" style="width: 9%;">
+                    <img src="https://i.pcmag.com/imagery/reviews/068BjcjwBw0snwHIq0KNo5m-15..v1602794215.png" alt="" style="width: 15%;">
+                    <img src="https://mea.mastercard.com/content/dam/mccom/global/logos/logo-mastercard-mobile.svg" alt="" style="width: 15%;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROwcTrtKeZoxRKCmroyKok_-MtI1YRHT30Y6ELx4Ag90SFVeZSIJJGcMNGQ_nvnpl2F-M&usqp=CAU" alt="" style="width: 15%;">
+                    <img src="https://financialit.net/sites/default/files/american-express.png" alt="" style="width: 12%;">
+                    <img src="https://www.investopedia.com/thmb/JPZyTxQvXhP0EA7TQumPMJPQzWc=/1280x720/filters:fill(auto,1)/Discover-logo-28a70026a79d4023adafb0f5e2e773cf.jpg" alt="" style="width: 12%;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-FFhlz4pih56ZfnNIdNF9joafCCi8KQjYz8DgvOFDcRBNkb9cENzttsOmvJdwKrejdlI&usqp=CAU" alt="" style="width: 15%;">
+                    <img src="https://i.pcmag.com/imagery/reviews/02RJy7OTtPnQQjh37yQDNqx-15..v1598973550.png" alt="" style="width: 15%;">
+                    
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCuJXCwfKRT0XXQCVKTJOcipwB8B5ZYP9vthvAncdsz1X30sPZJ0RkxiYVHBGP8k0uG9U&usqp=CAU" alt="" style="width: 15%;">
+                    
+                    <img src="https://www.six-payment-services.com/dam/images/logos/logo-klarna-payments-pink.six-image.original.510.png" alt="" style="width: 10%;">
+
+                    <img src="https://getlogo.net/wp-content/uploads/2021/06/sezzle-logo-vector.png" alt="" style="width: 15%;">
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+    <script>
+
+    document.querySelector(".account").addEventListener("click",account);
+    function account(){
+        window.location.href="login.html";
+    }
+
+    document.querySelector(".cart").addEventListener("click",cart);
+    function cart(){
+        window.location.href="card.html";
+    }
+    // document.querySelector(".sign_me").addEventListener("click",sign_me);
+    // function sign_me(){
+    //     window.location.href="register.html";
+    // }
+
+    
+    var Bestsellers = [
+        {
+            imgPro : "https://static.thcdn.com/images/small/webp//productimg/original/11289609-8744892770898772.jpg",
+            name : "SkinCeuticals C E Ferulic (1 fl. oz.)",
+            print : 166.00
+
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370303-1074944341868735.jpg",
+            name : "EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)",
+            print : 37.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12596429-3594871019700125.jpg",
+            name : "SkinMedica TNS Advanced+ Serum (1 oz.)",
+            print : 295.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11588281-8764882139037003.jpg",
+            name : "Sunday Riley GOOD GENES All-In-One Lactic Acid Treatment (1.7 oz. - $175 Value)",
+            print : 122.00 
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11174178-1044909106371632.jpg",
+            name : "Paula's Choice SKIN PERFECTING 2 BHA Liquid Exfoliant (4 fl. oz.)",
+            print : 32.00 
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/small/webp//productimg/original/11291496-1824871578503201.jpg",
+            name : "iS Clinical Cleansing Complex (6 fl. oz.)",
+            print : 45.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370312-1044938634157826.jpg",
+            name : "EltaMD UV Clear Broad-Spectrum SPF 46 - Tinted (1.7 oz.)",
+            print : 39.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11290635-1804892767902966.jpg",
+            name : "SkinCeuticals Triple Lipid Restore 242 (1.6 fl. oz.)",
+            print : 139.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11291541-5024871574576726.jpg",
+            name : "Obagi Medical Nu-Derm Toner (6.7 fl. oz.)",
+            print : 43.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289682-1284871019539829.jpg",
+            name : "SkinMedica TNS Essential Serum (1 oz.)",
+            print : 281.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12747871-5844866386756265.jpg",
+            name : "Dr Dennis Gross SpectraLite™ FaceWare Pro (1 piece)",
+            print : 435.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11291956-2074871578544985.jpg",
+            name : "iS Clinical Active Serum (1 fl. oz.)",
+            print : 142.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11288881-1144871571568377.jpg",
+            name : "NuFACE Mini (2 piece)",
+            print : 209.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12901956-1634871508329232.jpg",
+            name : "Supergoop!® Unseen Sunscreen SPF 40 1.7 fl. oz.",
+            print : 36.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/10560417-1534868371575033.jpg",
+            name : "RevitaLash Advanced Eyelash Conditioner - 6 Month Supply (0.118 fl. oz.)",
+            print : 150.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289599-4344892770055931.jpg",
+            name : "Earn 500 reward points when purchasing this product as a rewards member*",
+            print : 100.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11574165-2114870996065159.jpg",
+            name : "SkinMedica HA5 Rejuvenating Hydrator (1 fl. oz.)",
+            print :120.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11395385-5474911401472936.jpg",
+            name : "SkinCeuticals Hyaluronic Acid Intensifier (1 fl. oz.)",
+            print : 120.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12597163-5554871574934407.jpg",
+            name : "Olaplex No. 4 Bond Maintenance Shampoo (8.5 fl. oz.)",
+            print : 28.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370314-1304944342872775.jpg",
+            name : "EltaMD UV Elements Tinted Broad-Spectrum SPF 44 (2 oz.)",
+            print : 36.50
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13547804-2074932747456540.jpg",
+            name : "SkinCeuticals Anti-Aging Radiance Duo Worth $296.00",
+            print : 296.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11290631-5864870995720591.jpg",
+            name : "SkinMedica HA5 Rejuvenating Hydrator (2 oz.)",
+            print : 178.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12597166-1134871572767741.jpg",
+            name : "Olaplex No. 7 Bonding Oil (1 fl. oz.)",
+            print : 28.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11535233-1444892768930832.jpg",
+            name : "SkinCeuticals Purifying Cleanser (6.8 fl. oz.)",
+            print : 35
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11574165-2114870996065159.jpg",
+            name : "SkinMedica HA5 Rejuvenating Hydrator (1 fl. oz.)",
+            print :120.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11395385-5474911401472936.jpg",
+            name : "SkinCeuticals Hyaluronic Acid Intensifier (1 fl. oz.)",
+            print : 120.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12597163-5554871574934407.jpg",
+            name : "Olaplex No. 4 Bond Maintenance Shampoo (8.5 fl. oz.)",
+            print : 28.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11401172-1034864721065269.jpg",
+            name : "COSRX Acne Pimple Master Patch (24 count)",
+            print : 6.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12901204-1454871826751128.jpg",
+            name : "DHS SAL Shampoo Maximum Strength (4 fl. oz.)",
+            print : 10.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12901200-1324882138522479.jpg",
+            name : "DHS Conditioning Rinse (8 fl. oz.)",
+            print : 11.08
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11374999-8894871557679898.jpg",
+            name : "Rita Hazan Root Concealer Touch Up Spray - Light Brown (2 oz.)",
+            print : 12.00
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11709474-2084866361945395.jpg",
+            name : "Bioderma Sensibio H2O (16.7 fl. oz.)",
+            print: 14.99
+        },
+        {
+            imgPro : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11709474-2084866361945395.jpg",
+            name : "Oribe Gold Lust Repair Restore Shampoo - Travel (2.53 fl. oz.)",
+            print: 17.00
+        },
+
+    ]
+
+
+    window.addEventListener("load" ,function(){
+        Seller(Bestsellers);
+    });
+
+
+    function sortbyprice(){
+        //var select = document.querySelector("#price").value;
+
+        var selection = document.querySelector("#price").value;
+
+        console.log(selection)
+
+        if(selection=="select"){
+            Seller(Bestsellers);
+        }
+
+        if(selection == "LTH"){
+            Bestsellers.sort(function(a,b){
+                return a.print - b.print;
+            })
+            Seller(Bestsellers);
+        }
+
+        if(selection == "HTL"){
+            Bestsellers.sort(function(a, b){
+                return b.print - a.print;
+            })
+            Seller(Bestsellers);
+        }
+
+        if(selection == "AtoZ"){
+            //console.log(selection)
+            Bestsellers.sort(function(a, b){
+                if (a.name > b.name) return 1;
+                if (a.name < b.name) return -1;
+                return 0;
+            })
+            Seller(Bestsellers);
+        }
+
+        if(selection == "ZtoA"){
+            //console.log(selection)
+            Bestsellers.sort(function(a,b){
+                if (b.name > a.name) return 1;
+                if (b.name < a.name) return -1;
+                return 0;
+            })
+            Seller(Bestsellers);
+        }
+    }
+
+    var arr_product;
+    if(JSON.parse(localStorage.getItem("product_details"))==null)
+    {
+        arr_product=[];
+    }
+    else
+    {
+        arr_product=JSON.parse(localStorage.getItem("product_details"));
+    }
+
+    function Seller(Bestsellers){
+        document.querySelector("#container").innerText = "";
+        Bestsellers.map(function(ele){
+
+        var box = document.createElement("div");
+
+        var img = document.createElement("img");
+        img.src = ele.imgPro;
+        img.setAttribute("class","image");
+
+        var name = document.createElement("p");
+        name.innerText = ele.name;
+        name.style.textAlign="center";
+
+        var price = document.createElement("h3");
+        price.innerText = ele.print;
+        price.style.textAlign= "center";
+
+        var btn = document.createElement("button");
+        btn.innerText = "ADD TO CART";
+        btn.setAttribute("class","btn1")
+
+        btn.addEventListener("click",function(){
+            addtocard(ele)
+        })
+
+        img.addEventListener("click",function(){
+            productd(ele)
+        })
+
+        box.append(img,name,price,btn);
+
+        document.querySelector("#container").append(box)
+        })
+
+        function addtocard(ele){
+            console.log(ele)
+            var objproduct={
+
+                img:    ele.imgPro,
+                name:   ele.name,
+                price:  ele.print,
+        }
+        console.log(objproduct)
+        arr_product.push(objproduct);
+        localStorage.setItem("product_details",JSON.stringify(arr_product))
+        }
+
+
+
+        var detaq = JSON.parse(localStorage.getItem("detaq")) || []
+            function productd(ele)
+        {
+            console.log(ele)
+        var onepage = {
+            img:ele.imgPro,
+            name:ele.name,
+            price:ele.print,
+        }
+        detaq.push(onepage);
+        localStorage.setItem("care", JSON.stringify(detaq))
+        window.location.href="productde.html";
+        }
+    }
+
+    
+    
+    
+
+    
+    </script>

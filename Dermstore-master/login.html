@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        
+        #bar{
+            width: 100%;
+            height: 80px;
+            /* border: 1px solid red; */
+            background-color: white;
+        }
+        img{
+            margin-left: 100px;
+            margin-top: 15px;
+            height: 50px;
+        }
+        #back{
+            background-color: rgb(238, 234, 234);
+            width: 100%;
+            height: 700px;
+            /* border: 1px solid red; */
+        }
+        #back>div{
+            width: 70%;
+            height: 600px;
+            /* border: 1px solid red; */
+            margin: auto;
+            /* margin-top: 100px; */
+            display: flex;
+            flex-direction: row;
+        
+            
+            justify-content: space-around;
+
+        }
+        #first{
+             width: 45%;
+             height:100%;
+             /* border: 1px solid black; */
+             background-color: white;
+             margin-top: 50px;
+             
+        }
+        #second{
+            width: 45%;
+             height:25%;
+             /* border: 1px solid black; */
+             background-color: white;
+             margin-top: 50px;
+        }
+        input{
+            height: 40px;
+            width: 80%;
+            margin-left: 30px;
+            border-radius: 5px;
+            /* text-align: right; */
+        }
+        .ptag{
+            font-size: 25px;
+            margin-left: 30px;
+
+        }
+        P{
+            margin-left: 30px;
+        }
+        button{
+            
+            background: black;
+            color: white;
+            padding: 10px;
+            display: block;
+            margin-left: 30px;
+            width: 85%;
+            font-size: 20px;
+        }
+        #fbgoogle{
+            width: 90%;
+            height: 50px;
+            /* border: 1px solid red; */
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        #fbgoogle>div{
+            width: 47%;
+            height: 100%;
+            border: 1px solid black;
+            /* padding-right: 100%; */
+            
+            
+        }
+        .image{
+                width: 100%;
+              margin: auto;
+               
+                /* height: auto; */
+        }
+        @media (max-width:780px){
+            #back>div{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        
+       
+    </style>
+</head>
+<body>
+     <div id="bar">
+        <img src="https://s1.thcdn.com/enterprise/assets/dermstore-global-a3ce7f42-4a2c-4cc5-ad05-ba594900fa02-logo-default.svg"/>
+     </div>
+     <div id="back">
+         <div>
+            <div id="first">
+                <p class="ptag">Existing Customers</p>
+                
+                 <p> *Email </p>
+                <input type="email" placeholder=""/>
+                <br/>
+                <br/>
+                <br/>
+                
+                <p> *Password </p>
+               <input type="password" placeholder="show"/>
+               <br/>
+                <br/>
+                <br/>
+               <p > Forgetten your Password?</p>
+               <br/>
+               <button>LOGIN TO YOUR ACCOUNT</button>
+               <br/>
+                
+                <p> Or,Continue with </p>
+                <div id="fbgoogle">
+                    <div>
+                        <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=797759867683555&kid_directed_site=0&app_id=797759867683555&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.2%2Fdialog%2Foauth%3Fclient_id%3D797759867683555%26redirect_uri%3Dhttps%253A%252F%252Floginservice.thehut.net%252Ffacebook%252FhandleLogin%26state%3DQjgzQjkyQ0RENTg3NDM5NDE4QkU3NDNEOTg3OEVCNzE3MUVDQzY4Q0NDOTM2QTYwMjAyRURBOEIwRUExMUJFRA%253D%253D.ZXlKbGVIQnBjbmxVYVcxbElqb3hOalE0TnpBeE1UUTJOek0wTENKamMzSm1WRzlyWlc0aU9pSmhaRE01TURjd01DMHhOMkUwTFRRd1pXUXRPV1JpWVMwd1lUQmpOVEk1TUdSbE56TWlMQ0p6YVhSbElqb2lNakE0SWl3aWMzVmljMmwwWlNJNkluVnpJaXdpWTJ4cFpXNTBVM1JoZEdVaU9pSmxlVXA1V2xoU01XTnROVlZpZVVrMlNXMW9NR1JJUW5wS1ZFNUNTbFJLUjBwVVNrZGtNMlF6VEcxU2JHTnRNWHBrUnpsNVdsTTFhbUl5TUd4TmExcG9XVEpPZG1SWE5UQlRSemwwV2xNMWFGa3lUblprVnpVd1NXNHdYSFV3TUROa0lpd2ljSEp2ZG1sa1pYSWlPaUptWVdObFltOXZheUlzSW5KbFpHbHlaV04wVlhKc0lqb2lhSFIwY0hNNkx5OTNkM2N1WkdWeWJYTjBiM0psTG1OdmJTOXpiMk5wWVd4QmRYUm9aVzUwYVdOaGRHbHZiaTVoWTJOdmRXNTBJaXdpWm14dmR5STZJbE5JU1VWTVJDSjk%253D%26scope%3Demail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dccbdde4e-b070-4094-9f09-5cd9a386b673%26tp%3Dunspecified&cancel_url=https%3A%2F%2Floginservice.thehut.net%2Ffacebook%2FhandleLogin%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DQjgzQjkyQ0RENTg3NDM5NDE4QkU3NDNEOTg3OEVCNzE3MUVDQzY4Q0NDOTM2QTYwMjAyRURBOEIwRUExMUJFRA%253D%253D.ZXlKbGVIQnBjbmxVYVcxbElqb3hOalE0TnpBeE1UUTJOek0wTENKamMzSm1WRzlyWlc0aU9pSmhaRE01TURjd01DMHhOMkUwTFRRd1pXUXRPV1JpWVMwd1lUQmpOVEk1TUdSbE56TWlMQ0p6YVhSbElqb2lNakE0SWl3aWMzVmljMmwwWlNJNkluVnpJaXdpWTJ4cFpXNTBVM1JoZEdVaU9pSmxlVXA1V2xoU01XTnROVlZpZVVrMlNXMW9NR1JJUW5wS1ZFNUNTbFJLUjBwVVNrZGtNMlF6VEcxU2JHTnRNWHBrUnpsNVdsTTFhbUl5TUd4TmExcG9XVEpPZG1SWE5UQlRSemwwV2xNMWFGa3lUblprVnpVd1NXNHdYSFV3TUROa0lpd2ljSEp2ZG1sa1pYSWlPaUptWVdObFltOXZheUlzSW5KbFpHbHlaV04wVlhKc0lqb2lhSFIwY0hNNkx5OTNkM2N1WkdWeWJYTjBiM0psTG1OdmJTOXpiMk5wWVd4QmRYUm9aVzUwYVdOaGRHbHZiaTVoWTJOdmRXNTBJaXdpWm14dmR5STZJbE5JU1VWTVJDSjk%253D%23_%3D_&display=page&locale=en_GB&pl_dbl=0"> <img class="image" src="https://tse3.mm.bing.net/th?id=OIP.3A07wYVpD7XjvG7pYNQi2wHaEJ&pid=Api&P=0&w=279&h=156" /></a> 
+                         
+                    </div>
+                    <div>  <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=797759867683555&kid_directed_site=0&app_id=797759867683555&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.2%2Fdialog%2Foauth%3Fclient_id%3D797759867683555%26redirect_uri%3Dhttps%253A%252F%252Floginservice.thehut.net%252Ffacebook%252FhandleLogin%26state%3DQjgzQjkyQ0RENTg3NDM5NDE4QkU3NDNEOTg3OEVCNzE3MUVDQzY4Q0NDOTM2QTYwMjAyRURBOEIwRUExMUJFRA%253D%253D.ZXlKbGVIQnBjbmxVYVcxbElqb3hOalE0TnpBeE1UUTJOek0wTENKamMzSm1WRzlyWlc0aU9pSmhaRE01TURjd01DMHhOMkUwTFRRd1pXUXRPV1JpWVMwd1lUQmpOVEk1TUdSbE56TWlMQ0p6YVhSbElqb2lNakE0SWl3aWMzVmljMmwwWlNJNkluVnpJaXdpWTJ4cFpXNTBVM1JoZEdVaU9pSmxlVXA1V2xoU01XTnROVlZpZVVrMlNXMW9NR1JJUW5wS1ZFNUNTbFJLUjBwVVNrZGtNMlF6VEcxU2JHTnRNWHBrUnpsNVdsTTFhbUl5TUd4TmExcG9XVEpPZG1SWE5UQlRSemwwV2xNMWFGa3lUblprVnpVd1NXNHdYSFV3TUROa0lpd2ljSEp2ZG1sa1pYSWlPaUptWVdObFltOXZheUlzSW5KbFpHbHlaV04wVlhKc0lqb2lhSFIwY0hNNkx5OTNkM2N1WkdWeWJYTjBiM0psTG1OdmJTOXpiMk5wWVd4QmRYUm9aVzUwYVdOaGRHbHZiaTVoWTJOdmRXNTBJaXdpWm14dmR5STZJbE5JU1VWTVJDSjk%253D%26scope%3Demail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dccbdde4e-b070-4094-9f09-5cd9a386b673%26tp%3Dunspecified&cancel_url=https%3A%2F%2Floginservice.thehut.net%2Ffacebook%2FhandleLogin%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DQjgzQjkyQ0RENTg3NDM5NDE4QkU3NDNEOTg3OEVCNzE3MUVDQzY4Q0NDOTM2QTYwMjAyRURBOEIwRUExMUJFRA%253D%253D.ZXlKbGVIQnBjbmxVYVcxbElqb3hOalE0TnpBeE1UUTJOek0wTENKamMzSm1WRzlyWlc0aU9pSmhaRE01TURjd01DMHhOMkUwTFRRd1pXUXRPV1JpWVMwd1lUQmpOVEk1TUdSbE56TWlMQ0p6YVhSbElqb2lNakE0SWl3aWMzVmljMmwwWlNJNkluVnpJaXdpWTJ4cFpXNTBVM1JoZEdVaU9pSmxlVXA1V2xoU01XTnROVlZpZVVrMlNXMW9NR1JJUW5wS1ZFNUNTbFJLUjBwVVNrZGtNMlF6VEcxU2JHTnRNWHBrUnpsNVdsTTFhbUl5TUd4TmExcG9XVEpPZG1SWE5UQlRSemwwV2xNMWFGa3lUblprVnpVd1NXNHdYSFV3TUROa0lpd2ljSEp2ZG1sa1pYSWlPaUptWVdObFltOXZheUlzSW5KbFpHbHlaV04wVlhKc0lqb2lhSFIwY0hNNkx5OTNkM2N1WkdWeWJYTjBiM0psTG1OdmJTOXpiMk5wWVd4QmRYUm9aVzUwYVdOaGRHbHZiaTVoWTJOdmRXNTBJaXdpWm14dmR5STZJbE5JU1VWTVJDSjk%253D%23_%3D_&display=page&locale=en_GB&pl_dbl=0"> 
+                        <img class="image" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" /></a> </div>
+                </div>
+
+            </div>
+            <div id="second">
+                <p class="ptag">New Customers</p>
+                <button onclick="myfunction()" >CONTINUE</button>
+
+            </div>
+         </div>
+        
+        
+     </div>
+</body>
+
+<script>
+    function myfunction(){
+        window.location.href = "register.html"
+    }
+</script>
+</html>

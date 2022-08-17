@@ -1,0 +1,2336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dermstore | Skin Care Website for Beauty Products Online</title>
+    <script
+       src="https://kit.fontawesome.com/24c494a6b6.js"
+       crossorigin="anonymous"
+     ></script>
+     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poly&display=swap" rel="stylesheet"> -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poly&display=swap" rel="stylesheet">
+    <style>
+        #top_div{
+            width: 100%;
+            height: 230px;
+            background-color: #f2f2f2;
+            border: 1px solid #f2f2f2;
+            cursor: pointer;
+        }
+
+        .white{
+            width: 100%;
+            height: 62%;
+            /* border: 1px solid black; */
+            background-color: #ffffff;
+            border: 1px solid #ffffff;
+            margin-top: 25px;
+        }
+
+        .white_top{
+            display: flex;
+            justify-content: space-between;
+            width: 88%;
+            /* border: 1px solid blue; */
+            margin: auto;
+            margin-top: 22px;
+        }
+
+        .white_top>div>img{
+            height: 60px;
+        }
+
+        .search>input{
+            height: 38px;
+            width: 400px;
+            /* border: 1px solid gray;  */
+            border: none;
+            font-size: 15px;
+            margin-left: 5px;
+        }
+
+        .search{
+            height: 40px;
+            width: 450px;
+            border: 1px solid #a6a6a6;
+            margin-top: 10px;
+            display: flex;
+        }
+
+        .search>div>svg{
+            width: 22px;
+            margin-top: 9px;
+            margin-left: 5px;
+        } 
+
+        .account{
+            display: flex;
+            width: 80px;
+        }
+
+        .account:hover{
+            background-color:#e2e2e2;
+            height: 50px;
+            width: 100px;
+        }
+
+        .account>div>i{
+            font-size: 20px;
+            margin-top: 14px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .account_and_cart{
+            display: flex;
+            width: 18%;
+            justify-content: space-between;
+            margin-top: 8px;
+        }
+
+        .cart{
+            display: flex;
+            font-size: 18px;
+            width: 80px;
+            /* border: 1px solid red; */
+        }
+
+        .cart:hover{
+            background-color:#e2e2e2;
+            height: 50px;
+            width: 80px;
+        }
+
+        .cart>div>svg{
+            font-size: 20px;
+            margin-top: 14px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        div>.p{
+            font-family: 'Lato', sans-serif;
+            font-size: 14.5px;
+            /* position: absolute; */
+        }
+        
+        .top_last{
+            display: flex;
+            width: 78.5%;
+            margin: auto;
+            margin-left: 90px;
+            justify-content: space-between;
+            font-family: 'Poly', serif;
+            font-size: 15px;
+            color: #3f3f3f;
+            margin-top: 2px;
+            /* position: relative; */
+        }
+
+        .top_last>div{
+            width: 50%;
+            text-align: center;
+            height: 40px;
+            /* border: 1px solid red; */
+            margin: auto;
+            white-space: nowrap;
+            margin-right: 5px;
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+
+        .top_last>div:hover{
+            background-color:#e2e2e2;
+        }
+
+        .top_last>div>p{
+            margin-top: 10px;
+        }
+
+        #gray{
+            display: flex;
+            width: 67%;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        .gray_matter{
+            display: flex;
+        }
+
+        .icon{
+            margin-top: 12px;
+        }
+       
+        .gray_matter>div>p{
+            padding-left: 8px;
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+        }
+
+        #second_section{
+            width: 100%;
+            background-color: #cccccc;
+            text-align: center;
+            height: 50px;
+            font-family: 'Lato', sans-serif;
+            font-weight: bolder;
+            padding-top: 1px;
+            font-size: 14px;
+            color: #3a3c47;
+            cursor: pointer;
+        }
+
+        #second_section:hover{
+            background-color:#e2e2e2;
+        }
+
+        .third_image>img{
+            height: 600px;
+            width: 100%;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+
+        #fourth_section{
+            height: 80px;
+            /* border: 1px solid red; */
+            text-align: center;
+        }
+
+        #fourth_section>p:nth-child(1)
+        {
+            font-size: 24px;
+            font-family: 'Poly', serif;
+        }
+
+        #fourth_section>p:nth-child(2)
+        {
+            font-family: 'Lato', sans-serif;
+            margin-top: -20px;
+            font-size: 14px;
+        }
+
+        #fifth_section{
+            width: 93%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        #fifth_section>div>img{
+            width: 100%;
+            height: 490px;
+        }
+
+        .scroll{
+            width: 50%;
+            display: flex;
+            /* border: 1px solid darkmagenta; */
+        }
+
+        .scroll_matter{
+            width: 88%;
+            display: flex;
+            overflow-y: hidden;
+            overflow-x: auto;
+        }
+
+        .scroll_matter>div{
+            margin-right: 8px;
+        }
+
+        .scroll_matter::-webkit-scrollbar{
+            display: none;
+        }
+
+        .scroll_img{
+            height: 62%;
+            width: 100%;
+        }
+
+        .scroll_name{
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            font-size: 14.5px;
+        }
+
+        .scroll_price{
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+        }
+
+        .scroll_button{
+            /* margin-left: px; */
+            padding: 8px 100px 8px 100px;
+            /* width: 90%; */
+            background-color: #222222;
+            color: white;
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+            white-space: nowrap;
+            margin: auto;
+            margin-top: 25px;
+            /* text-align: center; */
+        }
+
+        .left{
+            height: 8%;
+            width: 5%;
+            margin-top: 30%;
+            border: none;
+            border-radius: 0px 4px 4px 0px;
+            background-color: #cccccc;
+            cursor: pointer;
+        }
+
+        .left:hover{
+            background-color: #a7a7a7;
+        }
+        
+
+        .btn_right{
+            height: 8%;
+            width: 5%;
+            margin-top: 30%;
+            border: none;
+            border-radius: 4px 0px 0px 4px;
+            background-color: #cccccc;
+            cursor: pointer;
+        }
+
+        .btn_right:hover{
+            background-color: #a7a7a7;
+        }
+
+        #sixth_section{
+            font-family: 'Poly', serif;
+            font-size: 24px;
+            text-align: center;
+            /* border: 1px solid black; */
+        }
+
+        .sub{
+            border: 1px solid gray;
+            text-align: center;
+            height: 5%;
+            font-family: 'Lato', sans-serif;
+            font-size: 14.5px;
+            width: 86%;
+            margin: auto;
+            padding-top: 6px;
+        }
+
+        #eighth_section{
+            font-family: 'Poly', serif;
+            font-size: 24px;
+            text-align: center;
+            /* border: 1px solid black; */
+        }
+
+        #ninth_section{
+            padding-top: 20px;
+            width: 85%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+
+        #ninth_section>div>button{
+            width: 98%;
+            /* height: 90%; */
+            padding: 12px 0px 12px 0px;
+            background-color: white;
+            border: 2px solid black;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        #ninth_section>div>button:hover{
+            background-color: #dddddd;
+        }
+
+        #tenth_section{
+            padding-top: 40px;
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+            /* border: 1px solid red; */
+        }
+
+        #tenth_section>div>img{
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .tenth_section_matter{
+            text-align: center;
+            font-family: 'Poly', serif;
+            font-size: 20px;
+            margin-top: 3px;
+            cursor: pointer;
+        }
+
+        .tenth_section_sub{
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+            margin-top: -12px;
+            cursor: pointer;
+        }
+
+        #eleventh_section{
+            width: 92%;
+            margin: auto;
+            cursor: pointer;
+            /* border: 1px solid blue; */
+        }
+
+        #eleventh_section>div>img{
+            width: 100%;
+            padding-top: 20px;
+        }
+
+        #twelth_section{
+            font-family: 'Poly', serif;
+            font-size: 24px;
+            text-align: center;
+            /* border: 1px solid black; */
+        }
+
+        #thirteenth_section{
+            padding-top: 20px;
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+            /* border: 1px solid red; */
+        }
+
+        #thirteenth_section>div>img{
+            width: 100%;
+            cursor: pointer;
+        }
+
+        #thirteenth_section>div:nth-child(2)>img
+        {
+            padding-top: 40px;
+            /* border: 1px solid blue; */
+        }
+
+        #fourteenth_section{
+            font-family: 'Poly', serif;
+            font-size: 24px;
+            text-align: center;
+            /* border: 1px solid black; */
+            margin-top: 60px;
+            cursor: pointer;
+        }
+
+        #fifteenth_section{
+            display: flex;
+            width: 93%;
+            height: 470px;
+            margin: auto;
+            /* border: 1px solid red; */
+            cursor: pointer;
+        }
+
+        .fifteenth_section_products{
+            display: flex;
+            width: 98%;
+            overflow-y: hidden;
+            overflow-x: auto;
+        }
+
+        .fifteenth_section_products>div{
+            margin-right: 20px;
+        }
+
+        .fifteenth_section_products::-webkit-scrollbar{
+            display: none;
+        }
+
+        .fifteenth_section_products>div>.scroll_img{
+            width: 100%;
+            height: 60%;
+        }
+
+        #new_arrivals_section{
+            display: flex;
+            width: 93%;
+            height: 480px;
+            margin: auto;
+            /* border: 1px solid red; */
+            cursor: pointer;
+        }
+
+        .new_arrivals_section_products{
+            display: flex;
+            width: 98%;
+            overflow-y: hidden;
+            overflow-x: auto;
+        }
+
+        .new_arrivals_section_products::-webkit-scrollbar{
+            display: none;
+        }
+
+        .new_arrivals_section_products>div{
+            margin-right: 20px;
+        }
+
+        .new_arrivals_section_products>div>.scroll_img{
+            width: 100%;
+            height: 55%;
+        }
+
+        
+        #sixteenth_section{
+            font-family: 'Poly', serif;
+            font-size: 24px;
+            text-align: center;
+            /* border: 1px solid black; */
+            margin-top: 60px;
+            cursor: pointer;
+        }
+
+        #seventeenth_section{
+            display: flex;
+            width: 93%;
+            height: 500px;
+            margin: auto;
+            /* border: 1px solid red; */
+            cursor: pointer;
+        }
+
+        .seventeenth_section_products{
+            display: flex;
+            width: 98%;
+            overflow-y: hidden;
+            overflow-x: auto;
+            /* white-space: nowrap; */
+        }
+
+        .seventeenth_section_products>div{
+            margin-right: 20px;
+        }
+
+        .seventeenth_section_products::-webkit-scrollbar{
+            display: none;
+        }
+
+        .seventeenth_section_products>div>.scroll_img{
+            width: 100%;
+            height: 55%;
+        }
+        
+        .scroll_button:hover{
+            background-color: #5e5e5e;
+            cursor: pointer;
+        }
+
+        .seventeenth_left{
+            height: 10%;
+            width: 3.5%;
+            margin-top: 15%;
+            border: none;
+            border-radius: 0px 4px 4px 0px;
+            background-color: #cccccc;
+            cursor: pointer;
+        }
+
+        .seventeenth_right{
+            height: 10%;
+            width: 3.5%;
+            margin-top: 15%;
+            border: none;
+            border-radius: 4px 0px 0px 4px;
+            background-color: #cccccc;
+            cursor: pointer;
+        }
+
+        .seventeenth_left:hover{
+            background-color: #a7a7a7;
+        }
+
+        .seventeenth_right:hover{
+            background-color: #a7a7a7;
+        }
+
+        .striked_off_price{
+            text-decoration: line-through;
+        }
+
+        #video>iframe{
+            width: 100%;
+            height: 800px;
+            margin-top: 60px;
+        }
+
+        #eighteenth_section{
+            width: 95%;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        #eighteenth_section>.head{
+            font-family: 'Poly', serif;
+            text-align: center;
+            font-size: 24px;
+        }
+       
+        #eighteenth_section>.matter{
+            font-family: 'Lato', sans-serif;
+            text-align: center;
+            font-size: 14px;
+            margin-top: -8px;
+        }
+
+        #nineteenth_section{
+            font-family: 'Poly', serif;
+            text-align: center;
+            font-size: 24px;
+            margin-top: 60px;
+        }
+
+        #twentieth_section{
+            display: flex;
+            width: 93%;
+            height: 300px;
+            margin: auto;
+            /* border: 1px solid red; */
+            cursor: pointer;
+        }
+
+        .twentieth_section_products{
+            display: flex;
+            width: 98%;
+            overflow-y: hidden;
+            overflow-x: auto;
+            /* border: 1px solid blue; */
+            white-space: nowrap;
+        }
+
+        .twentieth_section_products::-webkit-scrollbar{
+            display: none;
+        }
+
+        .twentieth_scroll_div{
+            width: 100%;
+            /* border: 1px solid black; */
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .wrap{
+            text-align: center;
+            color: black;
+            font-family: 'Lato', sans-serif;
+            font-size: 14.5px;
+        }
+
+        .wrap_2{
+            text-align: center;
+            color: black;
+            font-family: 'Lato', sans-serif;
+            font-size: 14.5px;
+            margin-top: -10px;
+        }
+
+        .twentieth_left{
+            height: 15%;
+            width: 3.5%;
+            margin-top: 9%;
+            border: none;
+            border-radius: 0px 4px 4px 0px;
+            background-color: #cccccc;
+            cursor: pointer;
+        }
+
+        .twentieth_right{
+            height: 15%;
+            width: 3.5%;
+            margin-top: 9%;
+            border: none;
+            border-radius: 4px 0px 0px 4px;
+            background-color: #cccccc;
+            cursor: pointer;
+        }
+
+        .twentieth_left:hover{
+            background-color: #a7a7a7;
+        }
+
+        .twentieth_right:hover{
+            background-color: #a7a7a7;
+        }
+
+        #select_1{
+            display: none;
+        }
+        
+
+        #footer{
+            width: 100%;;
+            border-top: 1px solid gray;
+            margin-top: 100px;
+        }
+
+        #footer>.first{
+            width: 85%;
+            margin: auto;
+            height: 150px;
+            /* border-top: 1px solid gray; */
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        #footer>.first>.footer_left{
+            width: 48%;
+            /* border: 1px solid black; */
+            box-sizing: border-box;
+        }
+        
+        #footer>.first>.footer_right{
+            width: 48%;
+            /* border: 1px solid black; */
+        }
+
+        #footer>.first>.footer_left>p{
+            font-family: 'Poly', serif;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        #footer>.first>.footer_left>button{
+            background-color: #222222;
+            color: white;
+            padding: 10px 32px 10px 32px;
+        }
+
+        .footer_right>div>img{
+            margin-right: 10px;
+        }
+
+        #footer>.second{
+            width: 85%;
+            margin: auto;
+            height: 150px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        #footer>.second>.second_left{
+            width: 48%;
+            border-top: 1px solid gray;
+            box-sizing: border-box;
+        }
+        
+        #footer>.second>.second_right{
+            width: 48%;
+            /* border: 1px solid black; */
+        }
+
+        .second_right{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .second_right>div{
+            width: 30%;
+            border-top: 1px solid gray;
+        }
+
+        #last_footer{
+            width: 100%;
+            border-top: 1px solid gray;
+            margin-top: 80px;
+        }
+
+        #last_footer>div{
+            width: 85%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .last_footer_left{
+            width: 48%;
+        }
+
+        .last_footer_right{
+            width: 48%;
+        }
+
+        .last_footer_right>div{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .last_footer_right>div>img{
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        .last_footer_right>p{
+            font-family: 'lato', serif;
+            font-weight: bold;
+        }
+
+        .hamburger{
+            display: none;
+        }
+
+        .sign_me{
+            cursor: pointer;
+        }
+
+
+
+        @media only screen and (min-width: 421px) and (max-width: 780px){
+            #top_div{
+                width: 100%;
+                height: 80px;
+                background-color: white;
+                cursor: pointer;
+            }
+
+            .white{
+                margin-top: 0px;
+                height: 20%;
+            }
+
+            .white>.white_top{
+                margin-top: 0px;
+                height: 80%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding-right: 10px;
+                background-color: white;
+            }
+
+            .search>input, .top_last, .account_and_cart>div>div>p{
+                display: none;
+            }
+
+            .search{
+                border: none;
+            }
+
+            .white_top>div>img{
+                width: 100px;
+                height: 24px;
+                margin-left: 140px;
+                margin-top: 5px;
+                /* border: 1px solid blue; */
+            }
+
+            .search>div>svg{
+                margin-left: -220px;
+                width: 22px;
+                margin-top: -4px;
+            }
+
+            .account>div>i, .cart>div>svg{
+                margin-top: -5px;
+            }
+
+            #gray{
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            #gray>.gray_matter{
+                width: 100%;
+                height: 20%;
+                background-color: #f2f2f2;
+                /* border: 1px solid red; */
+            }
+
+            #gray>.gray_matter:nth-child(2), #gray>.gray_matter:nth-child(3), #gray>.gray_matter:nth-child(4){
+                display: none;
+            } 
+
+            .gray_matter>.icon{
+                margin-left: 28%;
+            }
+
+            #fifth_section{
+                display: block;
+            }
+
+            .scroll{
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .left{
+                height: 40px;
+                width: 7%;
+                margin-top: 40%;
+                border: none;
+                border-radius: 0px 1px 1px 0px;
+            }
+
+            .btn_right{
+                height: 40px;
+                width: 7%;
+                margin-top: 40%;
+                border: none;
+                border-radius: 1px 0px 0px 1px;
+            }
+
+            .scroll_matter>div{
+                margin-right: 80px;
+            }
+
+            #sixth_section>p{
+                margin-top: 60px;
+            }
+
+            .seventeenth_left{
+                height: 50px;
+                width: 11%;
+                margin-top: 44%;
+                border: none;
+                border-radius: 0px 4px 4px 0px;
+            }
+
+            .seventeenth_right{
+                height: 50px;
+                width: 11%;
+                margin-top: 44%;
+                border: none;
+                border-radius: 4px 0px 0px 4px;
+            }
+
+            #eighth_section>p{
+                margin-top: 60px;
+            }
+
+            #ninth_section{
+                padding-top: 20px;
+                width: 85%;
+                margin: auto;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: auto;
+                gap: 20px;
+            }
+
+            #tenth_section{
+                padding-top: 40px;
+                width: 90%;
+                margin: auto;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: auto;
+                gap: 20px;
+            }
+
+            #eleventh_section{
+            width: 100%;
+            margin: auto;
+            cursor: pointer;
+        }
+
+        #eleventh_section>div>img{
+            width: 100%;
+            padding-top: 60px;
+        }
+
+        #thirteenth_section{
+            padding-top: 20px;
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+
+        #fifteenth_section>.seventeenth_left{
+                height: 50px;
+                width: 11%;
+                margin-top: 44%;
+                border: none;
+                border-radius: 0px 4px 4px 0px;
+            }
+
+        #fifteenth_section>.seventeenth_right{
+                height: 50px;
+                width: 11%;
+                margin-top: 44%;
+                border: none;
+                border-radius: 4px 0px 0px 4px;
+            }
+
+        #new_arrivals_section>.seventeenth_left{
+                height: 50px;
+                width: 11%;
+                margin-top: 44%;
+                border: none;
+                border-radius: 0px 4px 4px 0px;
+            }
+
+        #new_arrivals_section>.seventeenth_right{
+                height: 50px;
+                width: 11%;
+                margin-top: 44%;
+                border: none;
+                border-radius: 4px 0px 0px 4px;
+            }
+
+            #twentieth_section>.twentieth_left{
+                height: 50px;
+                width: 11%;
+                margin-top: 15%;
+                margin-right: 5px;
+                border: none;
+                border-radius: 0px 4px 4px 0px;
+            }
+
+        #twentieth_section>.twentieth_right{
+                height: 50px;
+                width: 11%;
+                margin-top: 15%;
+                border: none;
+                border-radius: 4px 0px 0px 4px;
+            }
+
+            #footer>.first{
+                width: 85%;
+                margin: auto;
+                height: 150px;
+                display: block;
+                justify-content: space-between;
+                box-sizing: border-box;
+        }
+
+        #footer>.first>.footer_left{
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #footer>.second{
+            width: 85%;
+            margin: auto;
+            height: 150px;
+            display: block;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        #footer>.second>.second_left{
+            width: 100%;
+            border-top: 1px solid gray;
+            box-sizing: border-box;
+            margin-top: 50px;
+        }
+        
+        #footer>.second>.second_right{
+            width: 100%;
+        }
+
+        .second_right{
+            display: block;
+        }
+
+        .second_right>div{
+            width: 30%;
+            border-top: 1px solid gray;
+        }
+
+        .second_left>p{
+            border-bottom: 1px solid gray;
+            padding-bottom: 14px;
+        }
+
+        .second_left>p:nth-child(5)
+        {
+            margin-bottom: 40px;
+        }
+
+        #last_footer{
+            width: 100%;
+            border-top: 1px solid gray;
+            margin-top: 300px;
+        }
+
+        #last_footer>div{
+            width: 85%;
+            margin: auto;
+            display: block;
+        }
+
+        .last_footer_left{
+            width: 100%;
+        }
+
+        .last_footer_right{
+            width: 100%;
+        }
+
+        .second_right_one, .second_right_second, .second_right_third{
+            display: none;
+        }
+
+        #select_1{
+            display: inline-block;
+            font-family: 'lato', serif;
+            border: none;
+            width: 100%;
+            font-size: 14px;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
+
+        .hamburger{
+            display: block;
+            font-size: 25px;
+            text-align: left;
+            color: black;
+            text-decoration: none;
+            
+        }
+
+    }
+
+
+
+
+        @media only screen and (min-width: 70px) and (max-width: 420px){
+            #top_div{
+                width: 100%;
+                height: 80px;
+                background-color: white;
+                cursor: pointer;
+            }
+
+            .white{
+                margin-top: 0px;
+                height: 20%;
+            }
+
+            .white>.white_top{
+                margin-top: 0px;
+                height: 80%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding-right: 10px;
+                background-color: white;
+            }
+
+            .search>input, .top_last, .account_and_cart>div>div>p{
+                display: none;
+            }
+
+            .search{
+                border: none;
+            }
+
+            .white_top>div>img{
+                width: 100px;
+                height: 24px;
+                margin-left: 90px;
+                margin-top: 5px;
+                /* border: 1px solid blue; */
+            }
+
+            .search>div>svg{
+                margin-left: -180px;
+                width: 22px;
+                margin-top: -4px;
+            }
+
+            .account>div>i, .cart>div>svg{
+                margin-top: -5px;
+            }
+
+            #gray{
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            #gray>.gray_matter{
+                width: 100%;
+                height: 20%;
+                background-color: #f2f2f2;
+                /* border: 1px solid red; */
+            }
+
+            #gray>.gray_matter:nth-child(2), #gray>.gray_matter:nth-child(3), #gray>.gray_matter:nth-child(4){
+                display: none;
+            } 
+
+            .gray_matter>.icon{
+                margin-left: 28%;
+            }
+
+            #fifth_section{
+                display: block;
+            }
+
+            .scroll{
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .left{
+                height: 40px;
+                width: 7%;
+                margin-top: 40%;
+                border: none;
+                border-radius: 0px 1px 1px 0px;
+            }
+
+            .btn_right{
+                height: 40px;
+                width: 7%;
+                margin-top: 40%;
+                border: none;
+                border-radius: 1px 0px 0px 1px;
+            }
+
+            .scroll_matter>div{
+                margin-right: 80px;
+            }
+
+            #sixth_section>p{
+                margin-top: 60px;
+            }
+
+            .seventeenth_left{
+                height: 50px;
+                width: 11%;
+                margin-top: 44%;
+                border: none;
+                border-radius: 0px 4px 4px 0px;
+            }
+
+            .seventeenth_right{
+                height: 50px;
+                width: 11%;
+                margin-top: 44%;
+                border: none;
+                border-radius: 4px 0px 0px 4px;
+            }
+
+            #eighth_section>p{
+                margin-top: 60px;
+            }
+
+            #ninth_section{
+                padding-top: 20px;
+                width: 85%;
+                margin: auto;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: auto;
+                gap: 20px;
+            }
+
+            #tenth_section{
+                padding-top: 40px;
+                width: 90%;
+                margin: auto;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: auto;
+                gap: 20px;
+            }
+
+            #eleventh_section{
+            width: 100%;
+            margin: auto;
+            cursor: pointer;
+        }
+
+        #eleventh_section>div>img{
+            width: 100%;
+            padding-top: 60px;
+        }
+
+        #thirteenth_section{
+            padding-top: 20px;
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+
+        #fifteenth_section>.seventeenth_left{
+                height: 50px;
+                width: 11%;
+                margin-top: 44%;
+                border: none;
+                border-radius: 0px 4px 4px 0px;
+            }
+
+        #fifteenth_section>.seventeenth_right{
+                height: 50px;
+                width: 11%;
+                margin-top: 44%;
+                border: none;
+                border-radius: 4px 0px 0px 4px;
+            }
+
+        #new_arrivals_section>.seventeenth_left{
+                height: 50px;
+                width: 11%;
+                margin-top: 44%;
+                border: none;
+                border-radius: 0px 4px 4px 0px;
+            }
+
+        #new_arrivals_section>.seventeenth_right{
+                height: 50px;
+                width: 11%;
+                margin-top: 44%;
+                border: none;
+                border-radius: 4px 0px 0px 4px;
+            }
+
+            #twentieth_section>.twentieth_left{
+                height: 50px;
+                width: 11%;
+                margin-top: 15%;
+                margin-right: 5px;
+                border: none;
+                border-radius: 0px 4px 4px 0px;
+            }
+
+        #twentieth_section>.twentieth_right{
+                height: 50px;
+                width: 11%;
+                margin-top: 15%;
+                border: none;
+                border-radius: 4px 0px 0px 4px;
+            }
+
+            #footer>.first{
+                width: 85%;
+                margin: auto;
+                height: 150px;
+                display: block;
+                justify-content: space-between;
+                box-sizing: border-box;
+        }
+
+        #footer>.first>.footer_left{
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #footer>.second{
+            width: 85%;
+            margin: auto;
+            height: 150px;
+            display: block;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        #footer>.second>.second_left{
+            width: 100%;
+            border-top: 1px solid gray;
+            box-sizing: border-box;
+            margin-top: 50px;
+        }
+        
+        #footer>.second>.second_right{
+            width: 100%;
+        }
+
+        .second_right{
+            display: block;
+        }
+
+        .second_right>div{
+            width: 30%;
+            border-top: 1px solid gray;
+        }
+
+        .second_left>p{
+            border-bottom: 1px solid gray;
+            padding-bottom: 14px;
+        }
+
+        .second_left>p:nth-child(5)
+        {
+            margin-bottom: 40px;
+        }
+
+        #last_footer{
+            width: 100%;
+            border-top: 1px solid gray;
+            margin-top: 300px;
+        }
+
+        #last_footer>div{
+            width: 85%;
+            margin: auto;
+            display: block;
+        }
+
+        .last_footer_left{
+            width: 100%;
+        }
+
+        .last_footer_right{
+            width: 100%;
+        }
+
+        .second_right_one, .second_right_second, .second_right_third{
+            display: none;
+        }
+
+        #select_1{
+            display: inline-block;
+            font-family: 'lato', serif;
+            border: none;
+            width: 100%;
+            font-size: 14px;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
+
+        .hamburger{
+            display: block;
+            font-size: 25px;
+            text-align: left;
+            color: black;
+            text-decoration: none;
+            
+        }
+    }
+    </style>
+</head>
+<body>
+    <!-- header start -->
+    <div id="top_div">
+        <div class="white">
+            <!-- First part -->
+            <div class="white_top">
+                <!-- Dermstore logo and name -->
+                <a href="javascript:void(0);" class="hamburger">&#9776;</a>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREOArrqc7sf8CcH6397fZikjFfRELlBl4Iwc_F3LsQXdiU5tvc8EYd3RXyDTTmrIhEhg&usqp=CAU" alt=""> 
+                </div>
+
+                <!-- Search bar -->
+                <div class="search">
+                    <input type="text" placeholder="Search for a product or brand...">
+                    <div><svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg></div>
+                </div>
+
+                <!-- Account and Cart -->
+                <div class="account_and_cart">
+                    <div class="account">
+                        <div><i class="fa-regular fa-user"></i></div>
+                        <div><p class="p">Account</p></div>
+                    </div>
+                    <div class="cart">
+                        <div><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                        </svg></div>
+                        <div><p class="p">Cart</p></div>
+                    </div>
+                </div>
+              </div>
+
+              <!-- Nav Bar -->
+            <div class="top_last">
+                <div><p>Brands</p></div>
+                <div><p>Browse By</p></div>
+                <div class="best_seller"><p>Bestsellers</p></div>
+                <div><p>Skin Care</p></div>
+                <div><p>Make up</p></div>
+                <div><p>Hair Care</p></div>
+                <div><p>Bath & Body</p></div>
+                <div><p>Men</p></div>
+                <div><p>Tools & Devices</p></div>
+                <div><p>Gifts & Sets</p></div>
+                <div class="beauty_fix"><p>BeautyFIX</p></div>
+                <div class="sale"><p>Sale</p></div>
+                <div><p>New</p></div>
+                <div><p>Skin 101</p></div>
+            </div>
+        </div>
+        <!-- white end -->
+
+        <!-- gray_part_start -->
+       <div id="gray">
+           <div class="gray_matter">
+               <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+                <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+              </svg></div>
+               <div><p>FREE US Shipping over $50</p></div>
+           </div>
+
+           <div class="gray_matter">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+              </svg></div>
+            <div><p>New customers save 15% with code WELCOME15</p></div>
+        </div>
+
+        <div class="gray_matter">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+              </svg></div>
+            <div><p>Redeem Dermstore Rewards</p></div>
+        </div>
+
+        <div class="gray_matter">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+              </svg></div>
+            <div><p>Pay in 4 with Klarna</p></div>
+        </div>
+       </div>
+    </div>
+
+
+    <!-- Header last part start -->
+    <div id="second_section">
+        <p>Receive a 14-piece Gift (Worth $157) when you spend $175+! See cart for details. SHOP NOW</p>
+    </div>
+<!-- Header end -->
+
+
+<!-- Full page image section -->
+    <div id="third_section">
+        <div class="third_image">
+            <img src="https://static.thcdn.com/images/xlarge/webp/widgets/208-us/17/original-0303-STDCRE-32266-DS-AMR-MarchSPFLite-Banners-1920x700-095817.jpg" alt="">
+        </div>
+    </div>
+<!-- end -->
+
+
+<!-- 3x Points on EltaMD section -->
+    <div id="fourth_section">
+        <p>3x Points on EltaMD</p>
+        <p>Rewards members earn TRIPLE on best-selling SPF. Ends 4/3.</p>
+    </div>
+<!-- end -->
+
+
+    <div id="fifth_section">
+        <div><img src="https://static.thcdn.com/images/medium/webp/widgets/208-us/54/0303-STDCRE-32266-DS-AMR-MarchSPFLite-Square-676x556-074354.jpg"></div>
+        <div class="scroll">
+            <button class="left left_1"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            </svg></button>
+
+            <div class="scroll_matter"></div>
+
+            <button class="btn_right btn_right_1"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+            </svg></button>
+        </div>
+    </div>
+
+    </div>
+    <!--end horizontal scroll section  -->
+</div>
+<!-- end fifth section -->
+
+
+    <!-- start Recommended for you -->
+    <div id="sixth_section">
+        <p>Recommended for you</p>
+    </div>
+    <!-- end recommended for you & sixth section-->
+
+
+    <!--start recommended for you images-->
+    <div id="seventeenth_section">
+        <button class="seventeenth_left"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+        </svg></button>
+
+        <div class="seventeenth_section_products"></div>
+
+    <button class="seventeenth_right"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+    </svg></button>
+    </div>
+     <!--end recommended for you images & seventh section-->
+
+
+     <!-- start shop by category -->
+    <div id="eighth_section">
+        <p>Shop By Category</p>
+    </div>
+    <!-- end shop by category -->
+
+    <!-- start button section -->
+    <div id="ninth_section">
+        <div><button>SKIN CARE</button></div>
+        <div><button>SUNSCREEN</button></div>
+        <div><button>MOISTURIZERS</button></div>
+        <div><button>HAIR CARE</button></div>
+        <div><button>EYE CREAM</button></div>
+        <div><button>CLEANSERS</button></div>
+        <div><button>MAKEUP</button></div>
+        <div><button>FACE SERUMS</button></div>
+    </div>
+    <!-- end button section -->
+
+    <!-- start three grid images section -->
+    <div id="tenth_section">
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/37/Jane_Iredale-032137.png">
+            <p class="tenth_section_matter">Meet the NEW PurePressed Base</p>
+            <p class="tenth_section_sub">The bestseller from Jane Iredale, now in fresh, new sustainable packaging.</p>
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/31/Female_Founded_Brands_SquareBanner-054250-031931.jpg">
+            <p class="tenth_section_matter">Shop Women-Owned</p>
+            <p class="tenth_section_sub">Curated solutions from our favorite female-founded brands.</p>
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/52/HPSQ_Banner_676x556-054153-032052.jpg">
+            <p class="tenth_section_matter">Meet Fekkai</p>
+            <p class="tenth_section_sub">Salon-level hair care with clean, natural ingredients that’s free of nasties & full of performance.</p>
+        </div>
+    </div>
+    <!-- end -->
+
+    <!-- single image -->
+    <div id="eleventh_section">
+        <div><img src="https://static.thcdn.com/images/large/webp/widgets/208-us/46/original-ANTIOXIDANTS_BANNERS_1640X244-064546.jpg"></div>
+    </div>
+    <!-- end -->
+
+    <!-- start featured brands -->
+    <div id="twelth_section">
+        <p>Featured Brands</p>
+    </div>
+    <!-- end -->
+
+    <!-- start grid logo images section -->
+    <div id="thirteenth_section">
+        <div><img src="https://static.thcdn.com/images/small/webp/widgets/208-us/14/original-obagi_logo-105214.png"></div>
+        <div><img src="https://static.thcdn.com/images/small/webp/widgets/208-us/59/Skinc-014559.jpg"></div>
+        <div><img src="https://static.thcdn.com/images/small/webp/widgets/208-us/34/Untitled_design_%2811%29-033834.png"></div>
+        <div><img src="https://static.thcdn.com/images/small/webp/widgets/208-us/33/Untitled_design_%2814%29-033933.png"></div>
+        <div><img src="https://static.thcdn.com/images/small/webp/widgets/208-us/08/SkinMedica-014608.jpg"></div>
+        <div><img src="https://static.thcdn.com/images/small/webp/widgets/208-us/34/SundayRiley-Logo_2000x2000-01-075734.jpg"></div>
+    </div>
+    <!-- end -->
+
+    <!-- start female founded brands -->
+    <div id="fourteenth_section">
+        <p>Female-Founded Brands</p>
+    </div>
+    <!-- end -->
+
+
+    <!-- start female founded images section -->
+    <div id="fifteenth_section">
+            <button class="seventeenth_left left_3" style="padding-top: 10px; padding-bottom: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            </svg></button>
+    
+            <div class="fifteenth_section_products"></div>
+    
+            <button class="seventeenth_right btn_right_3" style=" padding-top: 10px; padding-bottom: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+            </svg></button>
+    
+    </div>
+    <!-- end -->
+
+    <!-- start new arrivals -->
+    <div id="sixteenth_section">
+        <p>New Arrivals</p>
+    </div>
+    <!-- end -->
+
+    <!-- start new arrival images -->
+    <div id="new_arrivals_section">
+        <button class="seventeenth_left left_4" style="padding-top: 10px; padding-bottom: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+        </svg></button>
+
+        <div class="new_arrivals_section_products"></div>
+
+        <button class="seventeenth_right btn_right_4" style=" padding-top: 10px; padding-bottom: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+        </svg></button>
+    </div>
+    <!-- end -->
+
+
+
+
+    <!-- video -->
+    <div id="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JNJgQ7NNui0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <!-- end -->
+
+    <!-- start my dermastore glow para -->
+    <div id="eighteenth_section">
+        <div class="head"><p>#MyDermstoreGlow</p></div>
+        <div class="matter"><p>We care about what goes on your skin, because of what’s within. Our assortment is top-rated, curated & authenticated—bringing you the highest quality products and straight-from-the-experts info to help you navigate all things beauty and skin care. Join the conversation on Instagram with #MyDermstoreGlow—show us your favorite #Dermstore finds that help you care for the skin you’re in! We’re excited to feature our community’s must-haves all season long.</p></div>
+    </div>
+    <!-- end -->
+
+    <!-- start from the blog -->
+    <div id="nineteenth_section">
+        <p>From The Blog</p>
+    </div>
+    <!-- end -->
+
+    <!-- start from the blog images -->
+    <div id="twentieth_section">
+        <button class="twentieth_left left_5"><svg xmlns="http://www.w3.org/2000/svg" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+        </svg></button>
+
+        <div class="twentieth_section_products">
+            <div class="twentieth_scroll_div">
+                <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/45/transition-skin-care-routine-from-winter-to-spring-021145.jpg" alt="">
+                <a href="https://www.dermstore.com/blog/how-to-transition-your-skin-care-routine-from-winter-to-spring/"> <p class="wrap">How to Transition Your Skin Care Routine </p>
+                <p class="wrap_2"> Winter to Spring</p></a>
+            </div>
+
+            <div class="twentieth_scroll_div">
+                <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/26/Q%26A-with-founder-of-briogeo-063326.jpg" alt="">
+                <a href="https://www.dermstore.com/blog/how-to-transition-your-skin-care-routine-from-winter-to-spring/"> <p class="wrap">Q&A with Nancy Twine, Founder of Briogeo </p>
+                    <p class="wrap_2"></p></a>
+            </div>
+
+            <div class="twentieth_scroll_div">
+                <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/19/original-skincare-order-073119.jpg" alt="">
+                <a href="https://www.dermstore.com/blog/how-to-transition-your-skin-care-routine-from-winter-to-spring/"> <p class="wrap">In What Order Do I Apply My Skin Care </p>
+                    <p class="wrap_2">Products?</p></a>
+            </div>
+
+            <div class="twentieth_scroll_div">
+                <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/40/skinceuticals-products-widget-110940.jpg" alt="">
+                <a href="https://www.dermstore.com/blog/how-to-transition-your-skin-care-routine-from-winter-to-spring/"> <p class="wrap">7 Overnight Treatments for Super Glowy </p>
+                <p class="wrap_2">Skin</p></a>
+            </div>
+
+            <div class="twentieth_scroll_div">
+                <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/37/original-9-best-winter-makeup-products-072637.jpg" alt="">
+                <a href="https://www.dermstore.com/blog/how-to-transition-your-skin-care-routine-from-winter-to-spring/"> <p class="wrap">The 9 Best Winter Makeup Products for </p>
+                <p class="wrap_2">Glowing Skin</p></a>
+            </div>
+
+            <div class="twentieth_scroll_div">
+                <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/00/original-4_great_cold-weather_moisturizers-073200.jpg" alt="">
+                <a href="https://www.dermstore.com/blog/how-to-transition-your-skin-care-routine-from-winter-to-spring/"> <p class="wrap">The Best Facial Treatments to Get During</p>
+                <p class="wrap_2">Fall and Winter, According to an</p>
+                <p class="wrap_2">Esthetician</p></a>
+            </div>
+
+            <div class="twentieth_scroll_div">
+                <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/05/original-best-facial-during-fall-and-winter-073505.jpg" alt="">
+                <a href="https://www.dermstore.com/blog/how-to-transition-your-skin-care-routine-from-winter-to-spring/"> <p class="wrap">4 Great Cold-Weather Moisturizers and</p>
+                <p class="wrap_2">Why This NYC Dermatologist Loves Them</p></a>
+            </div>
+
+            
+        </div>
+
+        <button class="twentieth_right btn_right_5" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+        </svg></button>
+
+    </div>
+    <!-- end -->
+
+    <div id="footer">
+        <div class="first">
+            <div class="footer_left">
+                <p>Sign up to our newsletters and receive the latest exclusive discounts and deals</p>
+                <button class="sign_me">SIGN ME UP</button>
+            </div>
+
+            <div class="footer_right">
+                <p>Connect with us</p>
+                <div style="display: flex;">
+                    <img src="https://www.kindpng.com/picc/m/20-209935_facebook-icon-clipart-social-media-icons-grey-facebook.png" alt="" style="width: 40px; height:40px">
+                    <img src="https://www.pngitem.com/pimgs/m/204-2040928_logo-twitter-circle-grey-current-twitter-logo-png.png" alt="" style="width: 40px; height:40px">
+                    <img src="https://thumbs.dreamstime.com/b/basic-rgb-146064713.jpg" alt="" style="width: 40px; height:40px">
+                    <img src="https://www.vhv.rs/dpng/d/256-2566317_youtube-icon-gray-youtube-silver-logo-png-transparent.png" alt="" style="width: 50px; height:40px">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-r3g3vnJYLEPKawE5hzH8X8G8O-8QBep0lptcs-SR-srpWtCb9Wu3lgwlm4IxxBV3auI&usqp=CAU" alt="" style="width: 40px; height:40px">
+                </div>
+            </div>
+        </div>
+
+        <div class="second">
+            <div class="second_left">
+                <p style="font-family: 'Poly', serif; font-size: 14px;">Customer Service</p>
+                <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Help Center / FAQs</p>
+                <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Returns</p>
+                <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Shipping Information</p>
+                <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Order Status</p>
+            </div>
+            <div class="second_right">
+                <div class="second_right_one">
+                    <p style="font-family: 'Poly', serif; font-size: 14px;">My Account</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Manage My Subscriptions</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">My Rewards</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">My Favorites</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Referrals</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Order History</p>
+                </div>
+                <select name="" id="select_1">
+                    <option value="My Account">My Account</option>
+                    <option value="Manage My Subscription">Manage My Subscription</option>
+                    <option value="My Rewards">My Rewards</option>
+                    <option value="My Favourites">My Favourites</option>
+                    <option value="Referrals">Referrals</option>
+                    <option value="Order History">Order History</option>
+                </select>
+
+                <div class="second_right_second">
+                    <p style="font-family: 'Poly', serif; font-size: 14px;">Company</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">About Us</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Press</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">What is Klarna?</p>
+                </div>
+                <select name="" id="select_1">
+                    <option value="My Account">Company</option>
+                    <option value="Manage My Subscription">About Us</option>
+                    <option value="My Rewards">Press</option>
+                    <option value="My Favourites">What is Klarna?</option>
+                </select>
+
+                <div class="second_right_third">
+                    <p style="font-family: 'Poly', serif; font-size: 14px;">Legal</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Privacy Policy</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Terms & Conditions</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Modern Slavery Statement</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Product Recall</p>
+                    <p style="font-family: 'Lato', sans-serif; font-size: 14.5px;">Accessibility</p>
+                </div>
+                <select name="" id="select_1">
+                    <option value="My Account">Legal</option>
+                    <option value="Manage My Subscription">Privacy Policy</option>
+                    <option value="My Rewards">Terms & Conditions</option>
+                    <option value="My Favourites">Modern Slavery Statement</option>
+                    <option value="Referrals">Product Recall</option>
+                    <option value="Order History">Accessibility</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div id="last_footer">
+        <div>
+            <div class="last_footer_left">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWstdVMg1QG6hIQhkk-ypLnk0UrwVLQy1VCuKkJ6XdRiuEWmqen36iz4g3CVyCNWnvO5w&usqp=CAU" alt="" style="width: 20%;">
+                <p style="margin-top: -2%;">2022 © The Hut.com Ltd.</p>
+            </div>
+            <div class="last_footer_right">
+                <p>Pay securely with</p>
+                <div>
+                    <img src="https://cdn.trend.az/2008/06/10/Logo_VISA_180507.jpg" alt="" style="width: 9%;">
+                    <img src="https://cdn.trend.az/2008/06/10/Logo_VISA_180507.jpg" alt="" style="width: 9%;">
+                    <img src="https://i.pcmag.com/imagery/reviews/068BjcjwBw0snwHIq0KNo5m-15..v1602794215.png" alt="" style="width: 15%;">
+                    <img src="https://mea.mastercard.com/content/dam/mccom/global/logos/logo-mastercard-mobile.svg" alt="" style="width: 15%;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROwcTrtKeZoxRKCmroyKok_-MtI1YRHT30Y6ELx4Ag90SFVeZSIJJGcMNGQ_nvnpl2F-M&usqp=CAU" alt="" style="width: 15%;">
+                    <img src="https://financialit.net/sites/default/files/american-express.png" alt="" style="width: 12%;">
+                    <img src="https://www.investopedia.com/thmb/JPZyTxQvXhP0EA7TQumPMJPQzWc=/1280x720/filters:fill(auto,1)/Discover-logo-28a70026a79d4023adafb0f5e2e773cf.jpg" alt="" style="width: 12%;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-FFhlz4pih56ZfnNIdNF9joafCCi8KQjYz8DgvOFDcRBNkb9cENzttsOmvJdwKrejdlI&usqp=CAU" alt="" style="width: 15%;">
+                    <img src="https://i.pcmag.com/imagery/reviews/02RJy7OTtPnQQjh37yQDNqx-15..v1598973550.png" alt="" style="width: 15%;">
+                    
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCuJXCwfKRT0XXQCVKTJOcipwB8B5ZYP9vthvAncdsz1X30sPZJ0RkxiYVHBGP8k0uG9U&usqp=CAU" alt="" style="width: 15%;">
+                    
+                    <img src="https://www.six-payment-services.com/dam/images/logos/logo-klarna-payments-pink.six-image.original.510.png" alt="" style="width: 10%;">
+
+                    <img src="https://getlogo.net/wp-content/uploads/2021/06/sezzle-logo-vector.png" alt="" style="width: 15%;">
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+<script>
+    document.querySelector(".account").addEventListener("click",account);
+    function account(){
+        window.location.href="login.html";
+    }
+
+    document.querySelector(".cart").addEventListener("click",cart);
+    function cart(){
+        window.location.href="card.html";
+    }
+
+    document.querySelector(".best_seller").addEventListener("click",best_seller);
+    function best_seller(){
+        window.location.href="bestseller.html";
+    }
+
+    document.querySelector(".beauty_fix").addEventListener("click",beauty_fix);
+    function beauty_fix(){
+        window.location.href="beautifix.html";
+    }
+
+    document.querySelector(".sign_me").addEventListener("click",sign_me);
+    function sign_me(){
+        window.location.href="register.html";
+    }
+
+    document.querySelector(".sale").addEventListener("click",sale);
+    function sale(){
+        window.location.href="shop.html";
+    }
+
+    
+
+    arr=[{
+        img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370303-1074944341868735.jpg",
+        name:"EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)",
+        // star:"<span class="fa fa-star checked"></span>",
+        price:"37.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/13656347-1434935260795217.jpg",
+        name:"EltaMD Foaming Facial Home and Away Duo 5.0 Stars 1 Reviews",
+        // star:"gjhjghu",
+        price:"39.50"},
+
+        {img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370308-1584944342337920.jpg",
+        name:"EltaMD UV Pure Broad-Spectrum SPF 47 (4 oz.)",
+        // star:,
+        price:"27.50"},
+
+        {img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370307-5484944342267303.jpg",
+        name:"EltaMD Foaming Facial Cleanser (7 oz.) 4.73 Stars 534 Reviews",
+        // star:,
+        price:"28.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/1600/1600/12538013-4764765050522444.jpg",
+        name:"EltaMD UV Clear SPF46 Broad-Spectrum Duo (Worth $72) 5.0 Stars 3 Reviews",
+        // star:,
+        price:"70.00"}
+    ];
+
+    arr.map(function(el){
+        var div=document.createElement("div");
+        div.setAttribute("class","scroll_div");
+        var img=document.createElement("img");
+        img.setAttribute("class","scroll_img");
+        img.src=el.img;
+        var name=document.createElement("p");
+        name.setAttribute("class","scroll_name");
+        name.innerText=el.name;
+        var price=document.createElement("p");
+        price.setAttribute("class","scroll_price");
+        price.innerText=el.price;
+        var btn_div=document.createElement("div");
+        var btn=document.createElement("button");
+        btn.setAttribute("class","scroll_button");
+        btn.innerText="ADD TO CART";
+
+        btn_div.append(btn)
+        div.append(img,name,price,btn_div);
+        document.querySelector(".scroll_matter").append(div);
+
+        btn.addEventListener("click",function(){
+            product(el);
+        })
+    })
+
+    var arr_product;
+    if(JSON.parse(localStorage.getItem("product_details"))==null)
+    {
+        arr_product=[];
+    }
+    else
+    {
+        arr_product=JSON.parse(localStorage.getItem("product_details"));
+    }
+
+    function product(el){
+        var objproduct={
+            img:el.img,
+            name:el.name,
+            price:el.price,
+        }
+        arr_product.push(objproduct);
+        localStorage.setItem("product_details",JSON.stringify(arr_product))
+    }
+    
+
+       
+    var arr2=[
+        {img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370303-1074944341868735.jpg",
+        name:"EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)",
+        sub:"$15 EltaMD Gift",
+        // star:"dhhh",
+        price:"37.00"},
+
+        {img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370312-1044938634157826.jpg",
+        name:"EltaMD UV Clear Broad-Spectrum SPF 46 - Tinted (1.7 oz.)",
+        sub:"$15 EltaMD Gift",
+        // star:"dhhh",
+        price:"39.00"},
+
+        {img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13417349-1374914794952525.jpg",
+        name:"EltaMD Complete Skin and Sun Kit (Worth $137.00)",
+        sub:"$15 EltaMD Gift",
+        // star:"dhhh",
+        price:"115.00"},
+
+        {img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370304-1834876993606203.jpg",
+        name:"EltaMD AM Therapy Facial Moisturizer (1.7 oz.)",
+        sub:"Earn 3x Dermstore Rewards Points",
+        // star:"dhhh",
+        price:"36.00"},
+
+        {img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/12538013-4764765050522444.jpg",
+        name:"EltaMD UV Clear SPF46 Broad-Spectrum Duo (Worth $72)",
+        sub:"$15 EltaMD Gift",
+        // star:"dhhh",
+        price:"70.00"},
+
+        {img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370314-1304944342872775.jpg",
+        name:"EltaMD UV Elements Tinted Broad-Spectrum SPF 44 (2 oz.)",
+        sub:"$15 EltaMD Gift",
+        // star:"dhhh",
+        price:"36.50"},
+
+        {img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370308-1584944342337920.jpg",
+        name:"EltaMD UV Pure Broad-Spectrum SPF 47 (4 oz.)",
+        sub:"$15 EltaMD Gift",
+        // star:"dhhh",
+        price:"27.50"},
+    ]
+    arr2.map(function(el){
+        var div=document.createElement("div");
+        div.setAttribute("class","scroll_div");
+        var img=document.createElement("img");
+        img.setAttribute("class","scroll_img");
+        img.src=el.img;
+        var name=document.createElement("p");
+        name.setAttribute("class","scroll_name");
+        name.innerText=el.name;
+        var sub=document.createElement("p");
+        sub.innerText=el.sub;
+        sub.setAttribute("class","sub");
+        var price=document.createElement("p");
+        price.setAttribute("class","scroll_price");
+        price.innerText=el.price;
+        var btn=document.createElement("button");
+        btn.setAttribute("class","scroll_button");
+        btn.innerText="ADD TO CART";
+
+        div.append(img,name,sub,price,btn);
+        document.querySelector(".seventeenth_section_products").append(div);
+
+        btn.addEventListener("click",function(){
+            product(el);
+        })
+        
+    })
+
+
+    var arr3=[
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/11174178-1044909106371632.jpg",
+        name:"Paula's Choice SKIN PERFECTING 2 BHA Liquid Exfoliant (4 fl. oz.)",
+        // star:,
+        price:"32.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/12901956-1634871508329232.jpg",
+        name:"Supergoop!® Unseen Sunscreen SPF 40 1.7 fl. oz.",
+        // star:,
+        price:"36.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/11588281-8764882139037003.jpg",
+        name:"Sunday Riley GOOD GENES All-In-One Lactic Acid Treatment (1.7 oz. - $175 Value)",
+        // star:,
+        price:"122.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/12902784-7634871308243767.jpg",
+        name:"Supergoop!® Glowscreen SPF 40 1.7 fl. oz.2 BHA Liquid Exfoliant (4 fl. oz.)",
+        // star:,
+        price:"36.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/11288881-1144871571568377.jpg",
+        name:"NuFACE Mini (2 piece) SPF 50 with Vitamin C 6 fl. oz.",
+        // star:,
+        price:"209.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/11174228-4204909082865633.jpg",
+        name:"Paula's Choice 10 Azelaic Acid Booster (1 fl. oz.) 2 BHA Liquid Exfoliant (4 fl. oz.)",
+        // star:,
+        price:"38.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/11291053-1204870993023762.jpg",
+        name:"Jan Marini Bioglycolic Face Cleanser (8 oz.)Super Booster (0.67 fl. oz.)",
+        // star:,
+        price:"45.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/12902688-1514869963703809.jpg",
+        name:"ILIA Limitless Lash Mascara (Various Sizes)Super Booster (0.67 fl. oz.)",
+        // star:,
+        price:"13.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/11287917-1524870992160245.jpg",
+        name:"Jan Marini Age Intervention Face Cream (1 oz.)",
+        // star:,
+        price:"115.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/12695136-1154866655306041.jpg",
+        name:"Dr. Loretta Intense Replenishing Serum (30 ml.)",
+        // star:,
+        price:"70.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/11289052-1374909086933576.jpg",
+        name:"Paula's Choice C15 Super Booster (0.67 fl. oz.)",
+        // star:,
+        price:"52.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/12901001-2174876994385429.jpg",
+        name:"Supergoop!® PLAY Antioxidant Body Mist SPF 50 with Vitamin C 6 fl. oz.",
+        // star:,
+        price:"21.00"},
+        
+]
+
+        arr3.map(function(el){
+        var div=document.createElement("div");
+        div.setAttribute("class","scroll_div");
+        var img=document.createElement("img");
+        img.setAttribute("class","scroll_img");
+        img.src=el.img;
+        var name=document.createElement("p");
+        name.setAttribute("class","scroll_name");
+        name.innerText=el.name;
+        // var sub=document.createElement("p");
+        // sub.innerText=el.sub;
+        // sub.setAttribute("class","sub");
+        var price=document.createElement("p");
+        price.setAttribute("class","scroll_price");
+        price.innerText=el.price;
+        var btn=document.createElement("button");
+        btn.setAttribute("class","scroll_button");
+        btn.innerText="ADD TO CART";
+
+        div.append(img,name,price,btn);
+        document.querySelector(".fifteenth_section_products").append(div);
+
+        btn.addEventListener("click",function(){
+            product(el);
+        })
+        
+    })
+
+
+
+
+
+    var arr4=[
+        {img:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13644769-2094935078971616.jpg",
+        name:"Riley C.E.O. Afterglow Vitamin C Cream",
+        sub:"New Arrival",
+        price:"65.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/13156809-1574915281422679.jpg",
+        name:"TriPollar STOP Vx",
+        sub:"New Arrival",
+        price:"649.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/13694394-1174938374323578.jpg",
+        name:"TriPollar STOP X Rose Gold and Cosmetics",
+        sub:"New Arrival",
+        price:"399.50"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/13674864-8684945864261839.jpg",
+        name:"RevitaLash Beautifeye RBA Collection",
+        sub:"New Arrival",
+        price:"110.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/13674863-1884945864157247.jpg",
+        name:"RevitaLash Beautifeye RLA Collection",
+        sub:"New Arrival",
+        price:"150.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/13674838-2504939183735374.jpg",
+        name:"jane iredale Pure Pressed Blush 3.7g",
+        sub:"New Arrival",
+        price:"32.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/13516546-2844930071318699.jpg",
+        name:"SkinCeuticals Phyto A+ Brightening",
+        sub:"SkinCeuticals Gift",
+        price:"105.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/13656361-8144937082682854.jpg",
+        name:"SENTÉ Dermal Repair Body Cream 177ml",
+        sub:"$39 SENTÉ Gift",
+        price:"110.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/13645148-2094934999114430.jpg",
+        name:"NuFACE Trinity Supercharged Skincare",
+        sub:"New Arrival",
+        price:"370.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/13645148-2094934999114430.jpg",
+        name:"NuFACE Trinity Supercharged Skincare",
+        sub:"New Arrival",
+        price:"245.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/13656344-1324935261024114.jpg",
+        name:"Dermalogica Cleansing Duo",
+        sub:"$27 Dermalogica Gift",
+        price:"64.00"},
+
+        {img:"https://static.thcdn.com/images/small/webp//productimg/original/13656343-1714935260815509.jpg",
+        name:"Dermalogica Brightening Trio",
+        sub:"$27 Dermalogica Gift",
+        price:"149.00"},
+    ];
+
+    arr4.map(function(el){
+        var div=document.createElement("div");
+        div.setAttribute("class","scroll_div");
+        var img=document.createElement("img");
+        img.setAttribute("class","scroll_img");
+        img.src=el.img;
+        var name=document.createElement("p");
+        name.setAttribute("class","scroll_name");
+        name.innerText=el.name;
+        var sub=document.createElement("p");
+        sub.innerText=el.sub;
+        sub.setAttribute("class","sub");
+        var price=document.createElement("p");
+        price.setAttribute("class","scroll_price");
+        price.innerText=el.price;
+        var btn=document.createElement("button");
+        btn.setAttribute("class","scroll_button");
+        btn.innerText="ADD TO CART";
+
+        div.append(img,name,sub,price,btn);
+        document.querySelector(".new_arrivals_section_products").append(div)
+        ;
+
+        btn.addEventListener("click",function(){
+            product(el);
+        })
+        
+    })
+
+
+    document.querySelector(".btn_right_1").addEventListener("click",goLeft_1);
+    function goLeft_1()
+    {
+        var item=document.querySelector(".scroll_matter");
+        item.scrollLeft += 80;
+    }
+
+    document.querySelector(".left_1").addEventListener("click",goRight_1);
+    function goRight_1()
+    {
+        var item=document.querySelector(".scroll_matter");
+        item.scrollLeft -= 80;
+    }
+
+
+
+    
+
+    document.querySelector(".seventeenth_right").addEventListener("click",goLeft_2);
+    function goLeft_2()
+    {
+        var item=document.querySelector(".seventeenth_section_products");
+        item.scrollLeft += 80;
+    }
+    document.querySelector(".seventeenth_left").addEventListener("click",goRight_2);
+    function goRight_2()
+    {
+        var item=document.querySelector(".seventeenth_section_products");
+        item.scrollLeft -= 80;
+    }
+
+
+
+    document.querySelector(".btn_right_3").addEventListener("click",goLeft_3);
+    function goLeft_3()
+    {
+        var item=document.querySelector(".fifteenth_section_products");
+        item.scrollLeft += 80;
+    }
+    document.querySelector(".left_3").addEventListener("click",goRight_3);
+    function goRight_3()
+    {
+        var item=document.querySelector(".fifteenth_section_products");
+        item.scrollLeft -= 80;
+    }
+
+
+
+    document.querySelector(".btn_right_4").addEventListener("click",goLeft_4);
+    function goLeft_4()
+    {
+        var item=document.querySelector(".new_arrivals_section_products");
+        item.scrollLeft += 80;
+    }
+    document.querySelector(".left_4").addEventListener("click",goRight_4);
+    function goRight_4()
+    {
+        var item=document.querySelector(".new_arrivals_section_products");
+        item.scrollLeft -= 80;
+    }
+
+
+
+    document.querySelector(".btn_right_5").addEventListener("click",goLeft_5);
+    function goLeft_5()
+    {
+        var item=document.querySelector(".twentieth_section_products");
+        item.scrollLeft += 80;
+    }
+    document.querySelector(".left_5").addEventListener("click",goRight_5);
+    function goRight_5()
+    {
+        var item=document.querySelector(".twentieth_section_products");
+        item.scrollLeft -= 80;
+    }
+
+</script>

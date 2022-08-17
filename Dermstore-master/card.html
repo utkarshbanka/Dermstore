@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+       src="https://kit.fontawesome.com/24c494a6b6.js"
+       crossorigin="anonymous"
+     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poly&display=swap" rel="stylesheet">
+
+    <style>
+
+            /* head start */
+            #top_div{
+            width: 100%;
+            height: 230px;
+            background-color: #f2f2f2;
+            border: 1px solid #f2f2f2;
+            cursor: pointer;
+        }
+
+        .white{
+            width: 100%;
+            height: 62%;
+            /* border: 1px solid black; */
+            background-color: #ffffff;
+            border: 1px solid #ffffff;
+            margin-top: 25px;
+        }
+
+        .white_top{
+            display: flex;
+            justify-content: space-between;
+            width: 88%;
+            /* border: 1px solid blue; */
+            margin: auto;
+            margin-top: 22px;
+        }
+
+        .white_top>div>a>img{
+            height: 60px;
+        }
+
+        .search>input{
+            height: 38px;
+            width: 400px;
+            /* border: 1px solid gray;  */
+            border: none;
+            font-size: 15px;
+            margin-left: 5px;
+        }
+
+        .search{
+            height: 40px;
+            width: 450px;
+            border: 1px solid #a6a6a6;
+            margin-top: 10px;
+            display: flex;
+        }
+
+        .search>div>svg{
+            width: 22px;
+            margin-top: 9px;
+            margin-left: 5px;
+        } 
+
+        .account{
+            display: flex;
+            width: 80px;
+        }
+
+        .account:hover{
+            background-color:#e2e2e2;
+            height: 50px;
+            width: 100px;
+        }
+
+        .account>div>i{
+            font-size: 20px;
+            margin-top: 14px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .account_and_cart{
+            display: flex;
+            width: 18%;
+            justify-content: space-between;
+            margin-top: 8px;
+        }
+
+        .cart{
+            display: flex;
+            font-size: 18px;
+            width: 80px;
+            /* border: 1px solid red; */
+        }
+
+        .cart:hover{
+            background-color:#e2e2e2;
+            height: 50px;
+            width: 80px;
+        }
+
+        .cart>div>svg{
+            font-size: 20px;
+            margin-top: 14px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        div>.p{
+            font-family: 'Lato', sans-serif;
+            font-size: 14.5px;
+            /* position: absolute; */
+        }
+        
+        .top_last{
+            display: flex;
+            width: 78.5%;
+            margin: auto;
+            margin-left: 90px;
+            justify-content: space-between;
+            font-family: 'Poly', serif;
+            font-size: 15px;
+            color: #3f3f3f;
+            margin-top: 2px;
+            /* position: relative; */
+        }
+
+        .top_last>div{
+            width: 50%;
+            text-align: center;
+            height: 40px;
+            /* border: 1px solid red; */
+            margin: auto;
+            white-space: nowrap;
+            margin-right: 5px;
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+
+        .top_last>div:hover{
+            background-color:#e2e2e2;
+        }
+
+        .top_last>div>p{
+            margin-top: 10px;
+        }
+
+        #gray{
+            display: flex;
+            width: 67%;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        .gray_matter{
+            display: flex;
+        }
+
+        .icon{
+            margin-top: 12px;
+        }
+       
+        .gray_matter>div>p{
+            padding-left: 8px;
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+        }
+
+
+        #second_section{
+            width: 100%;
+            background-color: #cccccc;
+            text-align: center;
+            height: 50px;
+            font-family: 'Lato', sans-serif;
+            font-weight: bolder;
+            padding-top: 1px;
+            font-size: 14px;
+            color: #3a3c47;
+        }
+        /* head end */
+        #container{
+            width: 90%;
+            margin: auto;
+            height: 600px;
+            /* border: 1px solid red; */
+            display: block;
+        }
+
+        #first{
+            width: 100%;
+            height: 10%;
+            /* border: 1px solid blue; */
+        }
+
+        #first>p{
+            font-family: 'Poly', serif;
+            font-size: 22px;
+            margin-top: 60px;
+        }
+
+        #second{
+            width: 85%;
+            /* margin-top: 5px; */
+            height: 8%;
+            /* border: 1px solid black; */
+            display: flex;
+        }
+
+        .name{
+            font-family: 'lato', serif;
+            margin-top: 20px;
+            font-size: 14.5px;
+        }
+
+        .matter{
+            font-family: 'lato', serif;
+            font-size: 14px;
+        } 
+
+        #second>div{
+            font-family: 'lato', serif;
+            font-weight: bold;
+            font-size: 15px;
+            margin-top: 12px;
+        }
+
+        #second>div:nth-child(1){
+            width: 50%;
+            /* border: 1px solid red; */
+        }
+
+        .total{
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+        }
+
+        .item_details{
+            width: 100%;
+            /* height: 200px; */
+            display: flex;
+            /* border: 1px solid black; */
+            /* padding-top: 20px; */
+            box-sizing: border-box;
+            padding-top: 10px;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+        }
+
+        .img{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .price{
+            font-family: 'lato', serif;
+            margin-left: 150px;
+            margin-top: 20px;
+        }
+
+        .total_count{
+            font-family: 'lato', serif;
+            margin-left: 240px;
+            margin-top: 20px;
+        }
+
+        .total_amount{
+            font-family: 'lato', serif;
+            margin-left: 260px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .div_a{
+            width: 23%;
+            /* border: 1px solid red; */
+        }
+
+        #fourth{
+            display: flex;
+            width: 86%;
+            /* border: 1px solid blue; */
+            height: 80px;
+            justify-content: space-between;
+            padding-top: 50px;
+        }
+
+        .rewards{
+            /* border: 1px solid black; */
+            font-family: 'Poly', serif;
+            font-weight: bold;
+        }
+
+        .fourth_sub{
+            display: flex;
+            /* border: 1px solid red; */
+            width: 200px;
+            font-family: 'lato', serif;
+            justify-content: space-between;
+        }
+
+        .subtotal{
+            font-weight: bold;
+            margin-top: 0px;
+        }
+
+       .form{
+           margin: auto;
+           padding-left: 33%;
+           border-top: 1px solid gray;
+           border-bottom: 1px solid gray;
+           padding-top: 10px;
+           padding-bottom: 10px;
+           /* border: 1px solid black; */
+       }
+
+       #code{
+           border: 1px solid black;
+           background-color: white;
+           width: 350px;
+           height: 45px;
+           /* padding: 10px 100px 10px 0px; */
+       }
+
+       #submit{
+           background-color: #222222;
+           color: white;
+           width: 100px;
+           height: 45px;
+           font-family: 'lato', serif;
+       }
+
+       .last{
+           display: flex;
+           width: 100%;
+           margin: auto;
+           justify-content: space-between;
+           padding-top: 10px;
+       }
+
+       .button_1{
+           border: 2px solid black;
+           font-family: 'lato', serif;
+           background-color: white;
+           width: 240px;
+           height: 45px;
+           font-size: 15px;
+       }
+
+       .button_2{
+        border: 2px solid #222222;
+           font-family: 'lato', serif;
+           background-color: #222222;
+           color: white;
+           width: 280px;
+           height: 45px;
+           font-size: 15px;
+       }
+
+    @media only screen and (min-width: 421px) and (max-width: 780px){
+        #container{
+            width: 90%;
+        }
+        
+        #first{
+            width: 100%;
+            height: 10%;
+        }
+
+        #first>p{
+            font-family: 'Poly', serif;
+            font-size: 22px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #second{
+            display: none;
+        }
+
+        .price{
+            display: none;
+        }
+
+        div.total_amount{
+            font-family: 'lato', serif;
+            margin-left: 10px;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+
+        .total_count{
+            font-family: 'lato', serif;
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+
+        div.item_details{
+            height: 100px;
+            width: 100%;
+            display: flex;
+            box-sizing: border-box;
+            padding-top: 10px;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            }
+
+        div.div_a{
+            width: 73%;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .img{
+            width: 50px;
+            height: 50px;
+        }
+
+        .name{
+            font-family: 'lato', serif;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+
+        .matter{
+            font-family: 'lato', serif;
+            font-size: 12px;
+        } 
+
+        #fourth{
+            display: flex;
+            width:100%;
+            height: 80px;
+            justify-content: space-between;
+            padding-top: 50px;
+        }
+
+        .form{
+           margin: auto;
+           padding-left: 2%;
+           border-top: 1px solid gray;
+           border-bottom: 1px solid gray;
+           padding-top: 10px;
+           padding-bottom: 10px;
+       }
+
+       #submit{
+           background-color: #222222;
+           color: white;
+           width: 350px;
+           height: 45px;
+           margin-top: 8px;
+           font-family: 'lato', serif;
+       }
+
+       .last{
+           display: block;
+           width: 100%;
+           margin: auto;
+           border-top: 1px solid gray;
+           border-bottom: 1px solid gray;
+       }
+
+       .button_1{
+           border: 2px solid black;
+           font-family: 'lato', serif;
+           background-color: white;
+           width: 350px;
+           height: 40px;
+           font-size: 15px;
+           margin-top: 20px;
+           margin-left: 9px;
+       }
+
+       .button_2{
+        border: 2px solid #222222;
+           font-family: 'lato', serif;
+           background-color: #222222;
+           color: white;
+           width: 350px;
+           height: 40px;
+           font-size: 15px;
+           margin-top: 6px;
+           margin-left: 9px;
+           margin-bottom: 10px;
+       }
+    }
+
+       @media only screen and (min-width: 70px) and (max-width: 420px){
+        #container{
+            width: 90%;
+        }
+        
+        #first{
+            width: 100%;
+            height: 10%;
+        }
+
+        #first>p{
+            font-family: 'Poly', serif;
+            font-size: 22px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #second{
+            display: none;
+        }
+
+        .price{
+            display: none;
+        }
+
+        div.total_amount{
+            font-family: 'lato', serif;
+            margin-left: 10px;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+
+        .total_count{
+            font-family: 'lato', serif;
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+
+        div.item_details{
+            height: 100px;
+            width: 100%;
+            display: flex;
+            box-sizing: border-box;
+            padding-top: 10px;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            }
+
+        div.div_a{
+            width: 73%;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .img{
+            width: 50px;
+            height: 50px;
+        }
+
+        .name{
+            font-family: 'lato', serif;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+
+        .matter{
+            font-family: 'lato', serif;
+            font-size: 12px;
+        } 
+
+        #fourth{
+            display: flex;
+            width:100%;
+            height: 80px;
+            justify-content: space-between;
+            padding-top: 50px;
+        }
+
+        .form{
+           margin: auto;
+           padding-left: 2%;
+           border-top: 1px solid gray;
+           border-bottom: 1px solid gray;
+           padding-top: 10px;
+           padding-bottom: 10px;
+       }
+
+       #submit{
+           background-color: #222222;
+           color: white;
+           width: 350px;
+           height: 45px;
+           margin-top: 8px;
+           font-family: 'lato', serif;
+       }
+
+       .last{
+           display: block;
+           width: 100%;
+           margin: auto;
+           border-top: 1px solid gray;
+           border-bottom: 1px solid gray;
+       }
+
+       .button_1{
+           border: 2px solid black;
+           font-family: 'lato', serif;
+           background-color: white;
+           width: 350px;
+           height: 40px;
+           font-size: 15px;
+           margin-top: 20px;
+           margin-left: 9px;
+       }
+
+       .button_2{
+        border: 2px solid #222222;
+           font-family: 'lato', serif;
+           background-color: #222222;
+           color: white;
+           width: 350px;
+           height: 40px;
+           font-size: 15px;
+           margin-top: 6px;
+           margin-left: 9px;
+           margin-bottom: 10px;
+       }
+       }
+
+        
+
+    
+
+    </style>
+</head>
+<body>
+    <!-- head start -->
+    <div id="top_div">
+        <div class="white">
+            <!-- First part -->
+            <div class="white_top">
+                <!-- Dermstore logo and name -->
+                <div>
+                    <a href="home.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREOArrqc7sf8CcH6397fZikjFfRELlBl4Iwc_F3LsQXdiU5tvc8EYd3RXyDTTmrIhEhg&usqp=CAU" alt=""> </a>
+                </div>
+    
+                <!-- Search bar -->
+                <div class="search">
+                    <input type="text" placeholder="Search for a product or brand...">
+                    <div><svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg></div>
+                </div>
+    
+                <!-- Account and Cart -->
+                <div class="account_and_cart">
+                    <div class="account">
+                        <div><i class="fa-regular fa-user"></i></div>
+                        <div><p class="p">Account</p></div>
+                    </div>
+                    <div class="cart">
+                        <div><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                        </svg></div>
+                        <div><p class="p">Cart</p></div>
+                    </div>
+                </div>
+              </div>
+    
+              <!-- Nav Bar -->
+            <div class="top_last">
+                <div><a>Brands</a></div>
+                <div><a>Browse By</a></div>
+                <div><a style="text-decoration: none; color: #262626;;" href="bestseller.html">Bestsellers</a></div>
+                <div><a>Skin Care</a></div>
+                <div><a>Make up</a></div>
+                <div><a>Hair Care</a></div>
+                <div><a>Bath & Body</a></div>
+                <div><a>Men</a></div>
+                <div><a>Tools & Devices</a></div>
+                <div><a>Gifts & Sets</a></div>
+                <div><a style="text-decoration: none; color: #262626;;" href="beautifix.html">BeautyFIX</a></div>
+                <div><a style="text-decoration: none; color: #262626;;" href="shop.html">Sale</a></div>
+                <div><a>New</a></div>
+                <div><a>Skin 101</a></div>
+            </div>
+        </div>
+        <!-- white end -->
+    
+        <!-- gray_part_start -->
+       <div id="gray">
+           <div class="gray_matter">
+               <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+                <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+              </svg></div>
+               <div><p>FREE US Shipping over $50</p></div>
+           </div>
+    
+           <div class="gray_matter">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+              </svg></div>
+            <div><p>New customers save 15% with code WELCOME15</p></div>
+        </div>
+    
+        <div class="gray_matter">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+              </svg></div>
+            <div><p>Redeem Dermstore Rewards</p></div>
+        </div>
+    
+        <div class="gray_matter">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+              </svg></div>
+            <div><p>Pay in 4 with Klarna</p></div>
+        </div>
+       </div>
+    </div>
+    
+<!--     
+    <br>
+    <br> -->
+
+
+    <div>
+        <div id="second_section">
+        <p>Receive a 14-piece Gift (Worth $157) when you spend $175+! See cart for details. SHOP NOW</p>
+        </div>
+    </div>
+
+    <!-- head end -->
+    <div id="container">
+        <div id="first">
+            <p>Your Cart</p>
+        </div>
+        <div id="second">
+            <div class="items">Items</div>
+            <div class="total">
+            <div>Price</div>
+            <div>Quantity</div>
+            <div>Subtotal</div>
+            </div>
+        </div>
+        <div id="third"></div>
+        <div id="fourth">
+            <div class="rewards">Rewards members earn 1763 points on this order</div>
+            <div class="fourth_sub">
+                <div>Cart Subtotal:</div>
+                <div><p class="subtotal">$</p></div>
+            </div>
+        </div>
+        <div class="form">
+            <form action="" id="form">
+            <input type="text" placeholder="Got a coupon code? Enter it here:" id="code">
+            <input type="submit" value="ADD" id="submit">
+            </form>
+        </div>
+        <div class="last">
+            <div><button class="button_1">CONTINUE SHOPPING</button></div>
+            <div><button class="button_2">CHECKOUT SECURELY NOW</button></div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<script>
+    // login page
+    document.querySelector(".account").addEventListener("click",account);
+    function account(){
+        window.location.href="login.html";
+    }
+    // log in page
+    document.querySelector(".button_2").addEventListener("click",checkout)
+    function checkout(){
+        window.location.href="checkout.html";
+    }
+
+    var items= JSON.parse(localStorage.getItem("product_details"))
+    // console.log(items)
+    var subtotal=items.reduce(function(sum,el,i,ar){
+            var price=el.price;
+            // price=price.slice(1);
+            return sum+Number(price);
+        },0)
+
+        document.querySelector(".subtotal").append(subtotal);
+ 
+    
+        items.map(function(el){
+        
+        var div1=document.createElement("div");
+        div1.setAttribute("class","item_details");
+
+        var div2=document.createElement("div");
+        var img=document.createElement("img");
+        img.src=el.img;
+        img.setAttribute("class","img")
+        div2.append(img);
+        // console.log(div2)
+
+        var a=document.createElement("div")
+        a.setAttribute("class","div_a")
+        var div3=document.createElement("div");
+        div3.setAttribute("class","name")
+        div3.innerText=el.name;
+        var matter=document.createElement("p");
+        matter.setAttribute("class","matter")
+        matter.innerText="In stock - Usually dispatched within 24 hours"
+
+        var div4=document.createElement("div");
+        div4.setAttribute("class","price");
+        div4.innerText=el.price;
+
+        var count_item=el.name;
+        var count=0;
+        var amount;
+        for(var i=0; i<items.length; i++)
+        {
+            if(items[i].name==count_item)
+            {
+                count++;
+                amount=items[i].price;
+                // amount=amount.slice(1)
+            }
+        }
+        var total=count;
+        var total_count=document.createElement("div");
+        total_count.setAttribute("class","total_count");
+        total_count.innerText=count;
+
+        var total_amount=document.createElement("div");
+        var final_amount=Number(count)*Number(amount);
+
+        final_amount="$"+final_amount
+        total_amount.setAttribute("class","total_amount")
+        total_amount.innerText=final_amount;
+
+        a.append(div3,matter)
+        div1.append(div2,a,div4,total_count,total_amount);
+        document.querySelector("#third").append(div1);
+    })
+
+</script>
